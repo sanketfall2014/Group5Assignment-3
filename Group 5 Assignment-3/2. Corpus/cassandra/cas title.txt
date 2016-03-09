@@ -1,0 +1,304 @@
+Root Element :rss
+
+------------------------------------------
+
+
+Current Element: item
+Title: [CASSANDRA-11014] Repair fails with "not enough bytes"
+
+Current Element: item
+Title: [CASSANDRA-11315] Upgrade from 2.2.5 to 3.0.3 Fails with AssertionError
+
+Current Element: item
+Title: [CASSANDRA-10698] Static column performance with DISTINCT
+
+Current Element: item
+Title: [CASSANDRA-10943] NullPointer during LegacySchemaMigrator
+
+Current Element: item
+Title: [CASSANDRA-10937] OOM on multiple nodes on write load (v. 3.0.0), problem also present on DSE-4.8.3, but there it survives more time
+
+Current Element: item
+Title: [CASSANDRA-10922] Inconsistent query results
+
+Current Element: item
+Title: [CASSANDRA-10872] Debian Package does not prompt the user to review the config files; it just replaces them causing trouble (since the daemon starts by default)
+
+Current Element: item
+Title: [CASSANDRA-10777] LegacySSTableTest Test-case failure,  Issue with test\data\legacy-sstables\jb\Keyspace1\Keyspace1-Standard1-jb-0-Summary.db  file read on BIG ENDian systems
+
+Current Element: item
+Title: [CASSANDRA-9947] nodetool verify is broken
+
+Current Element: item
+Title: [CASSANDRA-11200] CompactionExecutor thread error brings down JVM in 3.0.3
+
+Current Element: item
+Title: [CASSANDRA-9669] If sstable flushes complete out of order, on restart we can fail to replay necessary commit log records
+
+Current Element: item
+Title: [CASSANDRA-10659] Windows CassCI: Fail on timed-out tests
+
+Current Element: item
+Title: [CASSANDRA-10714] tcp retransmission issue seen in cassandra cluster
+
+Current Element: item
+Title: [CASSANDRA-10695] Thrift HSHA appears to not work in 2.1+ with high client thread counts in stress
+
+Current Element: item
+Title: [CASSANDRA-10687] When adding new node to cluster getting Cassandra timeout during write query
+
+Current Element: item
+Title: [CASSANDRA-10583] After bulk loading CQL query on timestamp column returns wrong result
+
+Current Element: item
+Title: [CASSANDRA-10481] Quoted capitalised keyspace doesn't work as output for Hadoop
+
+Current Element: item
+Title: [CASSANDRA-10474] Streaming should tolerate secondary index build failure
+
+Current Element: item
+Title: [CASSANDRA-10449] OOM on bootstrap after long GC pause
+
+Current Element: item
+Title: [CASSANDRA-10445] Cassandra-stress throws max frame size error when SSL certification is enabled
+
+Current Element: item
+Title: [CASSANDRA-10173] Compaction isn't cleaning out tombstones between hint deliveries
+
+Current Element: item
+Title: [CASSANDRA-10143] Apparent counter overcount during certain network partitions
+
+Current Element: item
+Title: [CASSANDRA-10142] Protocol v1 and v2 don't deal with frozen type correctly
+
+Current Element: item
+Title: [CASSANDRA-10389] Repair session exception Validation failed
+
+Current Element: item
+Title: [CASSANDRA-10391] sstableloader fails with client SSL enabled with non-standard keystore/truststore location
+
+Current Element: item
+Title: [CASSANDRA-10194] Deadlock on startup
+
+Current Element: item
+Title: [CASSANDRA-10111] reconnecting snitch can bypass cluster name check
+
+Current Element: item
+Title: [CASSANDRA-10084] Very slow performance streaming a large query from a single CF
+
+Current Element: item
+Title: [CASSANDRA-10965] Shadowable tombstones can continue to shadow view results when timestamps match
+
+Current Element: item
+Title: [CASSANDRA-10968] When taking snapshot, manifest.json contains incorrect or no files when column family has secondary indexes
+
+Current Element: item
+Title: [CASSANDRA-10952] NullPointerException in Gossiper.getHostId
+
+Current Element: item
+Title: [CASSANDRA-10945] rebuild fail ,received file doesn't exist?
+
+Current Element: item
+Title: [CASSANDRA-10928] SSTableExportTest.testExportColumnsWithMetadata randomly fails
+
+Current Element: item
+Title: [CASSANDRA-10906] List index out of range
+
+Current Element: item
+Title: [CASSANDRA-10874] running stress with compaction strategy and replication factor fails on read after write
+
+Current Element: item
+Title: [CASSANDRA-10868] Skip supercolumns upgrade tests on jdk8
+
+Current Element: item
+Title: [CASSANDRA-10864] Dropped mutations high until cluster restart
+
+Current Element: item
+Title: [CASSANDRA-10825] OverloadedException is untested
+
+Current Element: item
+Title: [CASSANDRA-10826] frozen<> added to non-frozen UDF/UDA argument types in schema metadata
+
+Current Element: item
+Title: [CASSANDRA-10821] OOM Killer terminates Cassandra when Compactions use too much memory then won't restart
+
+Current Element: item
+Title: [CASSANDRA-10812] CompactionInterruptedException related to secondary index build during rolling upgrade
+
+Current Element: item
+Title: [CASSANDRA-10801] Unexplained inconsistent data with Cassandra 2.1
+
+Current Element: item
+Title: [CASSANDRA-10787] OutOfMemoryError after few hours from node restart
+
+Current Element: item
+Title: [CASSANDRA-10770] Warning TIOStreamTransport.java:112 - Error closing output stream.
+
+Current Element: item
+Title: [CASSANDRA-10769] "received out of order wrt DecoratedKey" after scrub
+
+Current Element: item
+Title: [CASSANDRA-10759] nodetool upgradesstables does not always complete synchronously
+
+Current Element: item
+Title: [CASSANDRA-10756] Timeout failures in NativeTransportService.testConcurrentDestroys unit test
+
+Current Element: item
+Title: [CASSANDRA-10751] "Pool is shutdown" error when running Hadoop jobs on Yarn
+
+Current Element: item
+Title: [CASSANDRA-10370] upgrade_tests.cql_tests:TestCQL.static_columns_with_distinct_test fails in 2.1 nodes
+
+Current Element: item
+Title: [CASSANDRA-10327] Performance regression in 2.2
+
+Current Element: item
+Title: [CASSANDRA-9936] node cannot join into cluster while handshaking with seed
+
+Current Element: item
+Title: [CASSANDRA-9939] CASSANDRA-8819 Same Bug
+
+Current Element: item
+Title: [CASSANDRA-10291] Bootstrap hangs on adding new node 
+
+Current Element: item
+Title: [CASSANDRA-10287] nodetool rebuild does not work with join_ring=false
+
+Current Element: item
+Title: [CASSANDRA-10303] streaming for 'nodetool rebuild' fails after adding a datacenter 
+
+Current Element: item
+Title: [CASSANDRA-9935] Repair fails with RuntimeException
+
+Current Element: item
+Title: [CASSANDRA-9753] LOCAL_QUORUM reads can block cross-DC if there is a digest mismatch
+
+Current Element: item
+Title: [CASSANDRA-9822] Debian/Ubuntu init script status says that Cassandra is not running when it actually is
+
+Current Element: item
+Title: [CASSANDRA-9766] Bootstrap outgoing streaming speeds are much slower than during repair
+
+Current Element: item
+Title: [CASSANDRA-9702] Repair running really slow
+
+Current Element: item
+Title: [CASSANDRA-9842] Inconsistent behavior for '= null' conditions on static columns
+
+Current Element: item
+Title: [CASSANDRA-9783] 2.1-offheap compaction dtests fail
+
+Current Element: item
+Title: [CASSANDRA-9805] nodetool status causes garbage to be accrued
+
+Current Element: item
+Title: [CASSANDRA-11270] sstablerepairedset loads CLASSPATH improperly (RHEL)
+
+Current Element: item
+Title: [CASSANDRA-11272] NullPointerException (NPE) during bootstrap startup in StorageService.java
+
+Current Element: item
+Title: [CASSANDRA-11195] static_columns_paging_test upgrade dtest flapping
+
+Current Element: item
+Title: [CASSANDRA-11196] tuple_notation_test upgrade tests flaps
+
+Current Element: item
+Title: [CASSANDRA-11152] SOURCE command in CQLSH 3.2 requires that "use keyspace" is in the cql file that you are sourcing
+
+Current Element: item
+Title: [CASSANDRA-11185] cqlsh_copy_tests.py:CqlshCopyTest.test_round_trip_with_sub_second_precision is failing
+
+Current Element: item
+Title: [CASSANDRA-11184] cqlsh_tests.py:TestCqlsh.test_sub_second_precision is failing
+
+Current Element: item
+Title: [CASSANDRA-11161] [offline] scrub can fail on zero byte components
+
+Current Element: item
+Title: [CASSANDRA-11155] Scrub/Cleanup block snapshots
+
+Current Element: item
+Title: [CASSANDRA-11154] CassandraDaemon in Managed mode fails to be restartable
+
+Current Element: item
+Title: [CASSANDRA-11219] Some Paxos issues
+
+Current Element: item
+Title: [CASSANDRA-11163] Summaries are needlessly rebuilt when the BF FP ratio is changed
+
+Current Element: item
+Title: [CASSANDRA-11201] Compaction memory fault in 3.0.3
+
+Current Element: item
+Title: [CASSANDRA-11174] org.apache.cassandra.metrics:type=Streaming,name=ActiveOutboundStreams is always zero
+
+Current Element: item
+Title: [CASSANDRA-11127] index_summary_upgrade_test.py is failing
+
+Current Element: item
+Title: [CASSANDRA-11126] select_distinct_with_deletions_test failing on non-vnode environments
+
+Current Element: item
+Title: [CASSANDRA-11138] cassandra-stress tool - clustering key values not distributed
+
+Current Element: item
+Title: [CASSANDRA-11082] netty's level hadn't prevent OOM when receiver handle slow.
+
+Current Element: item
+Title: [CASSANDRA-11109] Cassandra process killed by OS due to out of memory issue
+
+Current Element: item
+Title: [CASSANDRA-11105] cassandra-stress tool - InvalidQueryException: Batch too large
+
+Current Element: item
+Title: [CASSANDRA-11091] Insufficient disk space in memtable flush should trigger disk fail policy
+
+Current Element: item
+Title: [CASSANDRA-11162] upgrade tests failing with UDF configuration error
+
+Current Element: item
+Title: [CASSANDRA-11016] Fix flapping dtests with "unavailable" and "cannot achieve consistency" errors
+
+Current Element: item
+Title: [CASSANDRA-11011] DateTieredCompactionStrategy not compacting  sstables in 2.1.12
+
+Current Element: item
+Title: [CASSANDRA-11008] Null Pointer Exception when upgrading from 2.1.12 to 3.0.2
+
+Current Element: item
+Title: [CASSANDRA-11078] upgrade_supercolumns_test dtests failing on 2.1
+
+Current Element: item
+Title: [CASSANDRA-11044] query under certain partition key takes much more time than expected 
+
+Current Element: item
+Title: [CASSANDRA-11063] Unable to compute ceiling for max when histogram overflowed
+
+Current Element: item
+Title: [CASSANDRA-11057] move_single_node_localhost_test is failing
+
+Current Element: item
+Title: [CASSANDRA-11055] C*2.1 cqlsh DESCRIBE KEYSPACE ( or TABLE ) returns 'NoneType' object has no attribute 'replace'
+
+Current Element: item
+Title: [CASSANDRA-11000] Mixing LWT and non-LWT operations can result in an LWT operation being acknowledged but not applied
+
+Current Element: item
+Title: [CASSANDRA-10988] ClassCastException in SelectStatement
+
+Current Element: item
+Title: [CASSANDRA-10985] OOM during bulk read(slice query) operation
+
+Current Element: item
+Title: [CASSANDRA-10982] Put gc.log in -Dcassandra.logdir location by default
+
+Current Element: item
+Title: [CASSANDRA-9530] SSTable corruption can trigger OOM
+
+Current Element: item
+Title: [CASSANDRA-9434] If a node loses schema_columns SSTables it could delete all secondary indexes from the schema
+
+Current Element: item
+Title: [CASSANDRA-9418] Fix dtests on 2.2 branch on Windows

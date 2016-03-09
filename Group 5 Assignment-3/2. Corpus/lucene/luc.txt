@@ -1,0 +1,1000 @@
+org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:365)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:798)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:458)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:845)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.RandomizedRunner$3.evaluate(RandomizedRunner.java:747)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.RandomizedRunner$4.evaluate(RandomizedRunner.java:781)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:792)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:42)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:39)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:39)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:54)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+   [junit4]   1&gt; 	at
+org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:55)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+   [junit4]   1&gt; 	at
+com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:365)
+   [junit4]   1&gt; 	at java.lang.Thread.run(Thread.java:745)
+   [junit4]   1&gt; 
+   [junit4]   2&gt; NOTE: reproduce with: ant test
+-Dtestcase=TestLucene40BlockFormat -Dtests.method=testRandomExceptions
+-Dtests.seed=E3D1B260C7119B4B -Dtests.multiplier=3 -Dtests.slow=true
+-Dtests.locale=en_IE -Dtests.timezone=America/Virgin -Dtests.asserts=true
+-Dtests.file.encoding=UTF-8
+   [junit4] FAILURE 0.04s J0 | TestLucene40BlockFormat.testRandomExceptions &lt;&lt;&lt;
+   [junit4]    &gt; Throwable #1: java.lang.AssertionError: hit unexpected
+FileNotFoundException: file=_9.si
+   [junit4]    &gt; 	at
+__randomizedtesting.SeedInfo.seed([E3D1B260C7119B4B:8BFEDCA4591FC2EB]:0)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexFileDeleter.deleteFile(IndexFileDeleter.java:753)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexFileDeleter.deletePendingFiles(IndexFileDeleter.java:530)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexFileDeleter.refresh(IndexFileDeleter.java:456)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.merge(IndexWriter.java:3680)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.SerialMergeScheduler.merge(SerialMergeScheduler.java:40)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.maybeMerge(IndexWriter.java:1929)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.doAfterSegmentFlushed(IndexWriter.java:4731)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.DocumentsWriter$MergePendingEvent.process(DocumentsWriter.java:695)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.processEvents(IndexWriter.java:4757)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.processEvents(IndexWriter.java:4748)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.updateDocument(IndexWriter.java:1476)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.IndexWriter.addDocument(IndexWriter.java:1254)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.BaseIndexFileFormatTestCase.testRandomExceptions(BaseIndexFileFormatTestCase.java:429)
+   [junit4]    &gt; 	at
+org.apache.lucene.index.BasePostingsFormatTestCase.testRandomExceptions(BasePostingsFormatTestCase.java:86)
+   [junit4]    &gt; 	at java.lang.Thread.run(Thread.java:745)
+   [junit4]   2&gt; NOTE: leaving temporary files on disk at:
+/home/jenkins/workspace/Lucene-Solr-5.x-Linux/lucene/build/backward-codecs/test/J0/temp/lucene.codecs.blocktree.TestLucene40BlockFormat_E3D1B260C7119B4B-001
+   [junit4]   2&gt; NOTE: test params are: codec=Asserting(Lucene53): {},
+docValues:{}, sim=RandomSimilarityProvider(queryNorm=false,coord=crazy):
+{body=DFR I(F)1, f_DOCS_AND_FREQS_AND_POSITIONS=IB LL-D3(800.0), field=DFR
+I(ne)B1, f_DOCS=DFR I(F)LZ(0.3), f_DOCS_AND_FREQS=DFR I(n)B2,
+f_DOCS_AND_FREQS_AND_POSITIONS_AND_OFFSETS=DFR I(ne)L1, titleTokenized=IB
+LL-L2}, locale=en_IE, timezone=America/Virgin
+   [junit4]   2&gt; NOTE: Linux 3.19.0-26-generic amd64/Oracle Corporation 1.7.0_80
+(64-bit)/cpus=12,threads=1,free=196792272,total=525336576
+   [junit4]   2&gt; NOTE: All tests run in this JVM: [TestReuseDocsEnum,
+TestMaxPositionInOldIndex, TestLucene40TermVectorsFormat,
+TestLucene40SegmentInfoFormat, TestLucene42NormsFormat,
+TestBackwardsCompatibility, TestBitVector, TestLucene40PostingsFormat,
+TestLucene40BlockFormat]
+   [junit4] Completed [19/30] on J0 in 3.12s, 31 tests, 1 failure &lt;&lt;&lt; FAILURES!
+</pre>
+</div></div>
+
+<p><a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=mikemccand" class="user-hover" rel="mikemccand">Michael McCandless</a> previously looked at a couple of these: <a href="http://markmail.org/message/ogykur7itwihn36q" class="external-link" rel="nofollow">http://markmail.org/message/ogykur7itwihn36q</a> and <a href="http://markmail.org/message/tmh2ul74esybvwvr" class="external-link" rel="nofollow">http://markmail.org/message/tmh2ul74esybvwvr</a>.</p>
+
+<p><a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=mikemccand" class="user-hover" rel="mikemccand">Michael McCandless</a> noted when fixing one from July (from <a href="https://mail-archives.apache.org/mod_mbox/lucene-dev/201507.mbox/%3CCAL8PwkYXTs8cxgS1r_uBoFx6M7EvJezVsRg__64y7ZWO8PmzTA@mail.gmail.com%3E" class="external-link" rel="nofollow">https://mail-archives.apache.org/mod_mbox/lucene-dev/201507.mbox/%3CCAL8PwkYXTs8cxgS1r_uBoFx6M7EvJezVsRg__64y7ZWO8PmzTA@mail.gmail.com%3E</a> - oddly this email is not findable in markmail.org's archive):</p>
+
+<blockquote>
+<p>I just committed a fix.  This was caused by a new assert from<br/>
+<a href="https://issues.apache.org/jira/browse/LUCENE-6616" title="IndexWriter should list files once on init, and IFD should not suppress FNFE" class="issue-link" data-issue-key="LUCENE-6616"><del>LUCENE-6616</del></a>, basically making IndexWriter more picky such that a codec<br/>
+is not allowed to have created a file if in fact it didn't create it.</p>
+
+<p>In this case the SimpleTextSIFormat was claiming to have created a<br/>
+file (si.addFile) before createOutput succeeded, but then createOutput<br/>
+hit an exc (and the Directory impl took care of removing the file<br/>
+itself)...</p></blockquote>
+
+Current Element: item
+Title: [LUCENE-6943] Jvm Crashes occassionaly with Lucene 4.6.1
+Description: <p>#</p>
+<ol>
+	<li>A fatal error has been detected by the Java Runtime Environment:<br/>
+#</li>
+	<li>SIGSEGV (0xb) at pc=0x00007f5625212cd7, pid=9889, tid=139920130201344<br/>
+#</li>
+	<li>JRE version: Java(TM) SE Runtime Environment (7.0_60-b19) (build 1.7.0_60-b19)</li>
+	<li>Java VM: Java HotSpot(TM) 64-Bit Server VM (24.60-b09 mixed mode linux-amd64 )</li>
+	<li>Problematic frame:</li>
+	<li>J 11490 C2 org.apache.lucene.store.ByteBufferIndexInput.readByte()B (126 bytes) @ 0x00007f5625212cd7 <span class="error">&#91;0x00007f5625212c80+0x57&#93;</span><br/>
+#</li>
+	<li>Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again<br/>
+#</li>
+	<li>If you would like to submit a bug report, please visit:</li>
+	<li><a href="http://bugreport.sun.com/bugreport/crash.jsp" class="external-link" rel="nofollow">http://bugreport.sun.com/bugreport/crash.jsp</a><br/>
+#</li>
+</ol>
+
+
+
+<p>Register to memory mapping:</p>
+
+<p>RAX=0x00007f55de053510 is an oop</p>
+{instance class} 
+<ul class="alternate" type="square">
+	<li>klass: 
+{other class}
+<p>RBX=0x00007f549dffc028 is an oop<br/>
+org.apache.lucene.codecs.lucene41.Lucene41PostingsReader </p></li>
+	<li>klass: 'org/apache/lucene/codecs/lucene41/Lucene41PostingsReader'<br/>
+RCX=0x0000000000000004 is an unknown value<br/>
+RDX=0x0000000000000080 is an unknown value<br/>
+RSP=0x00007f41b1a7f640 is pointing into the stack for thread: 0x00007f48f81a4000<br/>
+RBP=0x00007f4b1bff3630 is an oop<br/>
+java.nio.DirectByteBufferR </li>
+	<li>klass: 'java/nio/DirectByteBufferR'<br/>
+RSI=0x00007f4b1bff35a8 is an oop<br/>
+org.apache.lucene.store.MMapDirectory$MMapIndexInput </li>
+	<li>klass: 'org/apache/lucene/store/MMapDirectory$MMapIndexInput'<br/>
+RDI=0x00000000237c532a is an unknown value<br/>
+R8 =0x00000000237c4da3 is an unknown value<br/>
+R9 =0x00007f4b1bff35a8 is an oop<br/>
+org.apache.lucene.store.MMapDirectory$MMapIndexInput </li>
+	<li>klass: 'org/apache/lucene/store/MMapDirectory$MMapIndexInput'<br/>
+R10=0x00007f3a8f98a000 is an unknown value<br/>
+R11=0x00000000237c4da3 is an unknown value<br/>
+R12=0x00007f41b1a81f30 is pointing into the stack for thread: 0x00007f48f81a4000<br/>
+R13=0x0000000000000093 is an unknown value<br/>
+R14=0x000000000000431f is an unknown value<br/>
+R15=0x00007f48f81a4000 is a thread</li>
+</ul>
+
+
+
+<p>Stack: <span class="error">&#91;0x00007f41b1985000,0x00007f41b1a86000&#93;</span>,  sp=0x00007f41b1a7f640,  free space=1001k<br/>
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)<br/>
+J 11490 C2 org.apache.lucene.store.ByteBufferIndexInput.readByte()B (126 bytes) @ 0x00007f5625212cd7 <span class="error">&#91;0x00007f5625212c80+0x57&#93;</span><br/>
+J 4940 C2 org.apache.lucene.codecs.lucene41.Lucene41PostingsReader$BlockDocsAndPositionsEnum.nextPosition()I (118 bytes) @ 0x00007f5624515cb4 <span class="error">&#91;0x00007f5624515980+0x334&#93;</span><br/>
+J 10578 C2 org.apache.lucene.search.ExactPhraseScorer.phraseFreq()I (624 bytes) @ 0x00007f56256de588 <span class="error">&#91;0x00007f56256de4e0+0xa8&#93;</span><br/>
+J 10629 C2 org.apache.lucene.search.ExactPhraseScorer.advance(I)I (152 bytes) @ 0x00007f5625729d84 <span class="error">&#91;0x00007f5625729ba0+0x1e4&#93;</span><br/>
+J 10433 C2 org.apache.lucene.search.MinShouldMatchSumScorer.advance(I)I (113 bytes) @ 0x00007f5625653c34 <span class="error">&#91;0x00007f5625653ae0+0x154&#93;</span><br/>
+J 5630 C2 org.apache.lucene.search.BooleanScorer2.advance(I)I (14 bytes) @ 0x00007f5624642a10 <span class="error">&#91;0x00007f5624642820+0x1f0&#93;</span><br/>
+J 5826 C2 org.apache.lucene.search.DisjunctionScorer.advance(I)I (87 bytes) @ 0x00007f56246f140c <span class="error">&#91;0x00007f56246f13c0+0x4c&#93;</span><br/>
+J 8801 C2 org.apache.lucene.search.join.FkToChildBlockJoinQuery$FkToChildBlockJoinScorer.advance(I)I (284 bytes) @ 0x00007f56251274c0 <span class="error">&#91;0x00007f5625127440+0x80&#93;</span><br/>
+J 5630 C2 org.apache.lucene.search.BooleanScorer2.advance(I)I (14 bytes) @ 0x00007f56246429fc <span class="error">&#91;0x00007f5624642820+0x1dc&#93;</span><br/>
+J 4797 C2 org.apache.lucene.search.FilteredQuery$LeapFrogScorer.score(Lorg/apache/lucene/search/Collector;)V (91 bytes) @ 0x00007f56244e9ccc <span class="error">&#91;0x00007f56244e9c40+0x8c&#93;</span><br/>
+J 4613 C2 org.apache.lucene.search.IndexSearcher.search(Ljava/util/List;Lorg/apache/lucene/search/Weight;Lorg/apache/lucene/search/Collector;)V (93 bytes) @ 0x00007f562446cbec <span class="error">&#91;0x00007f562446ca80+0x16c&#93;</span><br/>
+J 6159 C2 org.apache.solr.search.SolrIndexSearcher.getDocListNC(Lorg/apache/solr/search/SolrIndexSearcher$QueryResult;Lorg/apache/solr/search/SolrIndexSearcher$QueryCommand;)V (708 bytes) @ 0x00007f562486cc30 <span class="error">&#91;0x00007f562486c9a0+0x290&#93;</span><br/>
+J 11811 C2 org.apache.solr.search.SolrIndexSearcher.getDocListC(Lorg/apache/solr/search/SolrIndexSearcher$QueryResult;Lorg/apache/solr/search/SolrIndexSearcher$QueryCommand;)V (696 bytes) @ 0x00007f5625c957c0 <span class="error">&#91;0x00007f5625c955c0+0x200&#93;</span><br/>
+J 9702 C2 org.apache.solr.search.SolrIndexSearcher.search(Lorg/apache/solr/search/SolrIndexSearcher$QueryResult;Lorg/apache/solr/search/SolrIndexSearcher$QueryCommand;)Lorg/apache/solr/search/SolrIndexSearcher$QueryResult; (8 bytes) @ 0x00007f5625461404 <span class="error">&#91;0x00007f56254613e0+0x24&#93;</span><br/>
+j  org.apache.solr.handler.component.QueryComponent.process(Lorg/apache/solr/handler/component/ResponseBuilder;)V+1537</p>
+
+Current Element: item
+Title: [LUCENE-6941] TestStressIndexing2.testMultiConfig() failure: all instances of a given field name must have the same term vectors settings
+Description: <p>ASF Jenkins found this failure: <a href="https://builds.apache.org/job/Lucene-Solr-NightlyTests-5.x/1050/" class="external-link" rel="nofollow">https://builds.apache.org/job/Lucene-Solr-NightlyTests-5.x/1050/</a>.  I was able to reproduce by beasting (1/10 dups failed on the first beast iteration):</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>[junit4] Suite: org.apache.lucene.index.TestStressIndexing2
+   [junit4]   2&gt; NOTE: download the large Jenkins line-docs file by running 'ant get-jenkins-line-docs' in the lucene directory.
+   [junit4]   2&gt; NOTE: reproduce with: ant test  -Dtestcase=TestStressIndexing2 -Dtests.method=testMultiConfig -Dtests.seed=337C1E3DCE453481 -Dtests.multiplier=2 -Dtests.nightly=true -Dtests.slow=true -Dtests.linedocsfile=/x1/jenkins/lucene-data/enwiki.random.lines.txt -Dtests.locale=hr_HR -Dtests.timezone=Asia/Shanghai -Dtests.asserts=true -Dtests.file.encoding=UTF-8
+   [junit4] ERROR   1.92s J1 | TestStressIndexing2.testMultiConfig &lt;&lt;&lt;
+   [junit4]    &gt; Throwable #1: java.lang.IllegalArgumentException: all instances of a given field name must have the same term vectors settings (storeTermVectorOffsets changed for field="f0")
+   [junit4]    &gt; 	at __randomizedtesting.SeedInfo.seed([337C1E3DCE453481:FEEE68E563132BCF]:0)
+   [junit4]    &gt; 	at org.apache.lucene.index.TermVectorsConsumerPerField.start(TermVectorsConsumerPerField.java:170)
+   [junit4]    &gt; 	at org.apache.lucene.index.TermsHashPerField.start(TermsHashPerField.java:292)
+   [junit4]    &gt; 	at org.apache.lucene.index.FreqProxTermsWriterPerField.start(FreqProxTermsWriterPerField.java:74)
+   [junit4]    &gt; 	at org.apache.lucene.index.DefaultIndexingChain$PerField.invert(DefaultIndexingChain.java:611)
+   [junit4]    &gt; 	at org.apache.lucene.index.DefaultIndexingChain.processField(DefaultIndexingChain.java:344)
+   [junit4]    &gt; 	at org.apache.lucene.index.DefaultIndexingChain.processDocument(DefaultIndexingChain.java:300)
+   [junit4]    &gt; 	at org.apache.lucene.index.DocumentsWriterPerThread.updateDocument(DocumentsWriterPerThread.java:234)
+   [junit4]    &gt; 	at org.apache.lucene.index.DocumentsWriter.updateDocument(DocumentsWriter.java:450)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.updateDocument(IndexWriter.java:1477)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.addDocument(IndexWriter.java:1256)
+   [junit4]    &gt; 	at org.apache.lucene.index.TestStressIndexing2.indexSerial(TestStressIndexing2.java:250)
+   [junit4]    &gt; 	at org.apache.lucene.index.TestStressIndexing2.testMultiConfig(TestStressIndexing2.java:106)
+   [junit4]    &gt; 	at java.lang.Thread.run(Thread.java:745)
+   [junit4]    &gt; 	Suppressed: java.lang.IllegalStateException: close() called in wrong state: RESET
+   [junit4]    &gt; 		at org.apache.lucene.analysis.MockTokenizer.fail(MockTokenizer.java:126)
+   [junit4]    &gt; 		at org.apache.lucene.analysis.MockTokenizer.close(MockTokenizer.java:293)
+   [junit4]    &gt; 		at org.apache.lucene.analysis.TokenFilter.close(TokenFilter.java:58)
+   [junit4]    &gt; 		at org.apache.lucene.index.DefaultIndexingChain$PerField.invert(DefaultIndexingChain.java:687)
+   [junit4]    &gt; 		... 44 more
+   [junit4]   2&gt; NOTE: leaving temporary files on disk at: /x1/jenkins/jenkins-slave/workspace/Lucene-Solr-NightlyTests-5.x/lucene/build/core/test/J1/temp/lucene.index.TestStressIndexing2_337C1E3DCE453481-001
+   [junit4]   2&gt; NOTE: test params are: codec=Asserting(Lucene54): {f25=FSTOrd50, f32=FSTOrd50, id=PostingsFormat(name=LuceneVarGapDocFreqInterval), f19=Lucene50(blocksize=128), f68=Lucene50(blocksize=128), f43=FSTOrd50, f15=Lucene50(blocksize=128), f14=FSTOrd50, f95=Lucene50(blocksize=128), f33=Lucene50(blocksize=128), f65=FSTOrd50, f93=Lucene50(blocksize=128), f77=Lucene50(blocksize=128), f12=PostingsFormat(name=LuceneVarGapDocFreqInterval), f71=Lucene50(blocksize=128), f83=FSTOrd50, f91=Lucene50(blocksize=128), f2=Lucene50(blocksize=128), f40=Lucene50(blocksize=128), f10=FSTOrd50, f28=Lucene50(blocksize=128), f92=PostingsFormat(name=LuceneVarGapDocFreqInterval), f81=PostingsFormat(name=LuceneVarGapDocFreqInterval), f57=Lucene50(blocksize=128), f22=Lucene50(blocksize=128), f58=FSTOrd50, f23=PostingsFormat(name=LuceneVarGapDocFreqInterval), f13=Lucene50(blocksize=128), f46=Lucene50(blocksize=128), f48=Lucene50(blocksize=128), f82=Lucene50(blocksize=128), f36=FSTOrd50, f52=PostingsFormat(name=LuceneVarGapDocFreqInterval), f31=Lucene50(blocksize=128), f27=PostingsFormat(name=LuceneVarGapDocFreqInterval), f90=FSTOrd50, f69=FSTOrd50, f80=Lucene50(blocksize=128), f73=Lucene50(blocksize=128), f17=Lucene50(blocksize=128), f1=PostingsFormat(name=LuceneVarGapDocFreqInterval), f86=Lucene50(blocksize=128), f63=PostingsFormat(name=LuceneVarGapDocFreqInterval), f26=Lucene50(blocksize=128), f64=Lucene50(blocksize=128), f51=Lucene50(blocksize=128), f84=Lucene50(blocksize=128), f5=PostingsFormat(name=LuceneVarGapDocFreqInterval), f8=Lucene50(blocksize=128), f49=PostingsFormat(name=LuceneVarGapDocFreqInterval), f20=Lucene50(blocksize=128), f29=FSTOrd50, f59=Lucene50(blocksize=128), f39=Lucene50(blocksize=128), f9=PostingsFormat(name=LuceneVarGapDocFreqInterval), f55=Lucene50(blocksize=128), f94=FSTOrd50, f99=Lucene50(blocksize=128), f74=PostingsFormat(name=LuceneVarGapDocFreqInterval), f47=FSTOrd50, f41=PostingsFormat(name=LuceneVarGapDocFreqInterval), f37=Lucene50(blocksize=128), f98=FSTOrd50, f21=FSTOrd50, f42=Lucene50(blocksize=128), f62=Lucene50(blocksize=128), f89=PostingsFormat(name=LuceneVarGapDocFreqInterval), f7=FSTOrd50, f67=PostingsFormat(name=LuceneVarGapDocFreqInterval), f78=PostingsFormat(name=LuceneVarGapDocFreqInterval), f24=Lucene50(blocksize=128), f56=PostingsFormat(name=LuceneVarGapDocFreqInterval), f76=FSTOrd50, f0=Lucene50(blocksize=128), f38=PostingsFormat(name=LuceneVarGapDocFreqInterval), f53=Lucene50(blocksize=128), f16=PostingsFormat(name=LuceneVarGapDocFreqInterval), f72=FSTOrd50, f54=FSTOrd50, f45=PostingsFormat(name=LuceneVarGapDocFreqInterval)}, docValues:{}, sim=DefaultSimilarity, locale=hr_HR, timezone=Asia/Shanghai
+   [junit4]   2&gt; NOTE: Linux 3.13.0-52-generic amd64/Oracle Corporation 1.7.0_80 (64-bit)/cpus=4,threads=1,free=199000432,total=376963072
+   [junit4]   2&gt; NOTE: All tests run in this JVM: [TestNRTCachingDirectory, TestCodecs, TestIntArrayDocIdSet, TestPayloads, TestFastDecompressionMode, TestScoreCachingWrappingScorer, TestDateTools, TestIntBlockPool, TestIndexWriterForceMerge, TestUnicodeUtil, TestIndexWriterDeleteByQuery, TestBinaryDocument, TestCachingTokenFilter, TestLongBitSet, TestAddIndexes, TestDisjunctionMaxQuery, TestLucene50TermVectorsFormat, TestMergeSchedulerExternal, Test2BNumericDocValues, TestMultiCollector, TestIndexWriterMaxDocs, TestDirectoryReaderReopen, TestFieldReuse, TestDocument, TestSpanExplanationsOfNonMatches, TestSameScoresWithThreads, TestOmitPositions, TestBytesRefArray, TestDuelingCodecsAtNight, TestTermVectors, TestWeakIdentityMap, TestTermdocPerf, TestSegmentMerger, TestNIOFSDirectory, TestNewestSegment, TestNeedsScores, TestNotDocIdSet, TestDemoParallelLeafReader, TestBooleanMinShouldMatch, TestPositiveScoresOnlyCollector, TestFieldMaskingSpanQuery, TestSpanSearchEquivalence, TestFieldValueQuery, TestFilteredSearch, TestFieldType, TestForceMergeForever, TestFixedBitDocIdSet, TestStressIndexing2]
+   [junit4] Completed [91/414 (1!)] on J1 in 2.28s, 3 tests, 1 error &lt;&lt;&lt; FAILURES!
+</pre>
+</div></div>
+
+Current Element: item
+Title: [LUCENE-6934] java.io.EOFException: read past EOF: MMapIndexInput [slice=_342.fdx]
+Description: <p>We are getting following exception when we are trying to commit the changes done on the index.</p>
+
+<p>java.io.EOFException: read past EOF: MMapIndexInput(path="&lt;cache-directory&gt;/_342.cfs") <span class="error">&#91;slice=_342.fdx&#93;</span><br/>
+	at org.apache.lucene.store.ByteBufferIndexInput.readByte(ByteBufferIndexInput.java:78)<br/>
+	at org.apache.lucene.store.DataInput.readInt(DataInput.java:84)<br/>
+	at org.apache.lucene.store.ByteBufferIndexInput.readInt(ByteBufferIndexInput.java:129)<br/>
+	at org.apache.lucene.codecs.CodecUtil.checkHeader(CodecUtil.java:126)<br/>
+	at org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader.&lt;init&gt;(CompressingStoredFieldsReader.java:102)<br/>
+	at org.apache.lucene.codecs.compressing.CompressingStoredFieldsFormat.fieldsReader(CompressingStoredFieldsFormat.java:113)<br/>
+	at org.apache.lucene.index.SegmentCoreReaders.&lt;init&gt;(SegmentCoreReaders.java:147)<br/>
+	at org.apache.lucene.index.SegmentReader.&lt;init&gt;(SegmentReader.java:56)<br/>
+	at org.apache.lucene.index.ReadersAndLiveDocs.getReader(ReadersAndLiveDocs.java:121)<br/>
+	at org.apache.lucene.index.BufferedDeletesStream.applyDeletes(BufferedDeletesStream.java:216)<br/>
+	at org.apache.lucene.index.IndexWriter.applyAllDeletes(IndexWriter.java:2961)<br/>
+	at org.apache.lucene.index.IndexWriter.maybeApplyDeletes(IndexWriter.java:2952)<br/>
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2692)<br/>
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2827)<br/>
+	at org.apache.lucene.index.IndexWriter.commit(IndexWriter.java:2807)</p>
+
+
+<p>This is the exception when we tried to close after commit failed:</p>
+
+<p>java.io.FileNotFoundException: &lt;cache-directory&gt;/_342.cfs (No such file or directory)<br/>
+	at java.io.RandomAccessFile.open(Native Method)<br/>
+	at java.io.RandomAccessFile.&lt;init&gt;(RandomAccessFile.java:241)<br/>
+	at org.apache.lucene.store.MMapDirectory.openInput(MMapDirectory.java:193)<br/>
+	at org.apache.lucene.store.MMapDirectory.createSlicer(MMapDirectory.java:203)<br/>
+	at org.apache.lucene.store.CompoundFileDirectory.&lt;init&gt;(CompoundFileDirectory.java:102)<br/>
+	at org.apache.lucene.index.SegmentCoreReaders.&lt;init&gt;(SegmentCoreReaders.java:116)<br/>
+	at org.apache.lucene.index.SegmentReader.&lt;init&gt;(SegmentReader.java:56)<br/>
+	at org.apache.lucene.index.ReadersAndLiveDocs.getReader(ReadersAndLiveDocs.java:121)<br/>
+	at org.apache.lucene.index.BufferedDeletesStream.applyDeletes(BufferedDeletesStream.java:216)<br/>
+	at org.apache.lucene.index.IndexWriter.applyAllDeletes(IndexWriter.java:2961)<br/>
+	at org.apache.lucene.index.IndexWriter.maybeApplyDeletes(IndexWriter.java:2952)<br/>
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:2925)<br/>
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:2894)<br/>
+	at org.apache.lucene.index.IndexWriter.closeInternal(IndexWriter.java:928)<br/>
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:883)<br/>
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:845)</p>
+
+<p>Could you please point us what might be possible cause of this?</p>
+
+Current Element: item
+Title: [LUCENE-6914] DecimalDigitFilter skips characters in some cases (supplemental?)
+Description: <p>Found this while writing up the solr ref guide for DecimalDigitFilter. </p>
+
+<p>With input like "????????" ("Double Struck" 1984) the filter produces "1??8??" (1, double struck 9, 8, double struck 4)  add some non-decimal characters in between the digits (ie: "??x??x??x??") and you get the expected output ("1x9x8x4").  This doesn't affect all decimal characters though, as evident by the existing test cases.</p>
+
+<p>Perhaps this is an off by one bug in the "if the original was supplementary, shrink the string" code path?</p>
+
+Current Element: item
+Title: [LUCENE-6808] Term(Ord)ValComparator.value return BytesRefs that are re-used internally
+Description: 
+<p>While working on <a href="https://issues.apache.org/jira/browse/SOLR-6168" title="enhance collapse QParser so that &quot;group head&quot; documents can be selected by more complex sort options" class="issue-link" data-issue-key="SOLR-6168"><del>SOLR-6168</del></a>, which involves some non-trivial usage of <tt>FieldComparator</tt>, I discovered some weird bugs anytime I was using TermOrdValComparator.  I ultimately tracked this down to the fact that the <tt>BytesRef</tt> instances returned by <tt>TermOrdValComparator.value(int slot)</tt> are backed by <tt>BytesRefBuilder</tt> instances that the Comparator hangs on to and re-uses &#8211; so the values a caller gets back from <tt>FieldComparator.value(slot)</tt> might be changed out from under it before it has a chance to use that value in something like <tt>FieldComparator.compareValues(first,second)</tt>.</p>
+
+<p>The general approach when dealing with BytesRef instances (as i understand it) is that the caller is responsible for making a copy if it wants to hang on to it &#8211; but in this case that would violate the generic API of FieldComparator &#8211; callers would have to pay attention to when a <tt>FieldComparator</tt> is a <br/>
+<tt>FieldComparator&lt;BytesRef&gt;</tt> and do casting to copy the BytesRef.</p>
+
+<p>It seems like the right solution is for <tt>TermOrdValComparator.value(slot)</tt> (and <tt>TermValComparator.value(slot)</tt> which has a similar BytesRef usage) to return <tt>BytesRef.deepCopyOf(values[slot])</tt></p>
+
+
+Current Element: item
+Title: [LUCENE-6703] IllegalArgumentException in QueryParserBase.parse()
+Description: <p>I have encountered a very special case where parsing a certain String with the <tt>MultiFieldQueryParser</tt> causes an <tt>IllegalArgumentException</tt> thrown in the constructor of <tt>org.apache.lucene.util.automaton.RegExp</tt>. I would have expected a <tt>ParseException</tt> instead (as stated in the API doc).</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+QueryParser parser = <span class="code-keyword">new</span> MultiFieldQueryParser(...);
+parser.parse(<span class="code-quote">"/x)/"</span>);
+</pre>
+</div></div>
+
+<p>The "evil" search string is <b><tt>/x)/</tt></b>.</p>
+
+Current Element: item
+Title: [LUCENE-6788] Mishandling of Integer.MIN_VALUE in FuzzySet leads to AssertionError
+Description: <p>Reindexing some data in the DataStax Enterprise Search product (which uses Solr) led to these stack traces:</p>
+
+<p>ERROR <a href="#13430">Lucene Merge Thread #13430</a> 2015-09-08 11:14:36,582 CassandraDaemon.java (line 258) Exception in thread Thread<a href="#13430,6,main">Lucene Merge Thread #13430,6,main</a><br/>
+org.apache.lucene.index.MergePolicy$MergeException: java.lang.AssertionError<br/>
+        at org.apache.lucene.index.ConcurrentMergeScheduler.handleMergeException(ConcurrentMergeScheduler.java:545)<br/>
+        at org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run(ConcurrentMergeScheduler.java:518)<br/>
+Caused by: java.lang.AssertionError<br/>
+        at org.apache.lucene.codecs.bloom.FuzzySet.mayContainValue(FuzzySet.java:216)<br/>
+        at org.apache.lucene.codecs.bloom.FuzzySet.contains(FuzzySet.java:165)<br/>
+        at org.apache.lucene.codecs.bloom.BloomFilteringPostingsFormat$BloomFilteredFieldsProducer$BloomFilteredTermsEnum.seekExact(BloomFilteringPostingsFormat.java:351)<br/>
+        at org.apache.lucene.index.BufferedUpdatesStream.applyTermDeletes(BufferedUpdatesStream.java:414)<br/>
+        at org.apache.lucene.index.BufferedUpdatesStream.applyDeletesAndUpdates(BufferedUpdatesStream.java:283)<br/>
+        at org.apache.lucene.index.IndexWriter._mergeInit(IndexWriter.java:3838)<br/>
+        at org.apache.lucene.index.IndexWriter.mergeInit(IndexWriter.java:3799)<br/>
+        at org.apache.lucene.index.IndexWriter.merge(IndexWriter.java:3651)<br/>
+        at org.apache.lucene.index.ConcurrentMergeScheduler.doMerge(ConcurrentMergeScheduler.java:405)<br/>
+        at org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run(ConcurrentMergeScheduler.java:482)</p>
+
+<p>In tracking down the cause of the stack trace, I noticed this:<br/>
+<a href="https://github.com/apache/lucene-solr/blob/trunk/lucene/codecs/src/java/org/apache/lucene/codecs/bloom/FuzzySet.java#L164" class="external-link" rel="nofollow">https://github.com/apache/lucene-solr/blob/trunk/lucene/codecs/src/java/org/apache/lucene/codecs/bloom/FuzzySet.java#L164</a></p>
+
+<p>It is possible for the Murmur2 hash to return Integer.MIN_VALUE (e.g. when hashing "WeH44wlbCK").  Multiplying Integer.MIN_VALUE by -1 returns Integer.MIN_VALUE again, so the "positiveHash &gt;= 0" assertion at line 217 fails.</p>
+
+<p>We could special-case Integer.MIN_VALUE, map it to 42 or some other magic number... since the same "* -1" logic appears on line 236 perhaps it should be part of the hash function?</p>
+
+Current Element: item
+Title: [LUCENE-6726] TestIndexWriterOnDiskFull.testAddDocumentOnDiskFull() failure
+Description: <p>My Linux Jenkins found a seed that reproduces 100% for me on OS X w/Java7, but only if I run the whole suite (i.e., exclude <tt>-Dtests.method=testAddDocumentOnDiskFull</tt> from the repro line) <a href="http://jenkins.sarowe.net/job/Lucene-core-nightly-monster-5.x-Java7/68/" class="external-link" rel="nofollow">http://jenkins.sarowe.net/job/Lucene-core-nightly-monster-5.x-Java7/68/</a>:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>[junit4:pickseed] Seed property 'tests.seed' already defined: 6B36AD57BB5A1779
+   [junit4] &lt;JUnit4&gt; says ????! Master seed: 6B36AD57BB5A1779
+   [junit4] Executing 1 suite with 1 JVM.
+   [junit4] 
+   [junit4] Started J0 PID(86114@localhost).
+   [junit4] Suite: org.apache.lucene.index.TestIndexWriterOnDiskFull
+   [junit4] HEARTBEAT J0 PID(86114@localhost): 2015-08-06T09:44:03, stalled for 70.7s at: TestIndexWriterOnDiskFull.testAddIndexOnDiskFull
+   [junit4] OK      73.8s | TestIndexWriterOnDiskFull.testAddIndexOnDiskFull
+   [junit4]   2&gt; NOTE: reproduce with: ant test  -Dtestcase=TestIndexWriterOnDiskFull -Dtests.method=testAddDocumentOnDiskFull -Dtests.seed=6B36AD57BB5A1779 -Dtests.nightly=true -Dtests.slow=true -Dtests.locale=ar_AE -Dtests.timezone=America/Boa_Vista -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   0.25s | TestIndexWriterOnDiskFull.testAddDocumentOnDiskFull &lt;&lt;&lt;
+   [junit4]    &gt; Throwable #1: org.apache.lucene.store.AlreadyClosedException: this IndexWriter is closed
+   [junit4]    &gt; 	at __randomizedtesting.SeedInfo.seed([6B36AD57BB5A1779:E72E952846CFC1BD]:0)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.ensureOpen(IndexWriter.java:719)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.ensureOpen(IndexWriter.java:733)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.updateDocument(IndexWriter.java:1471)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.addDocument(IndexWriter.java:1254)
+   [junit4]    &gt; 	at org.apache.lucene.index.TestIndexWriterOnDiskFull.addDoc(TestIndexWriterOnDiskFull.java:575)
+   [junit4]    &gt; 	at org.apache.lucene.index.TestIndexWriterOnDiskFull.testAddDocumentOnDiskFull(TestIndexWriterOnDiskFull.java:80)
+   [junit4]    &gt; 	at java.lang.Thread.run(Thread.java:745)
+   [junit4]    &gt; Caused by: java.io.IOException: fake disk full at 7402 bytes when writing _4_Lucene50_0.dvm (file length=0)
+   [junit4]    &gt; 	at org.apache.lucene.store.MockIndexOutputWrapper.checkDiskFull(MockIndexOutputWrapper.java:88)
+   [junit4]    &gt; 	at org.apache.lucene.store.MockIndexOutputWrapper.writeBytes(MockIndexOutputWrapper.java:134)
+   [junit4]    &gt; 	at org.apache.lucene.store.MockIndexOutputWrapper.writeByte(MockIndexOutputWrapper.java:127)
+   [junit4]    &gt; 	at org.apache.lucene.store.RateLimitedIndexOutput.writeByte(RateLimitedIndexOutput.java:66)
+   [junit4]    &gt; 	at org.apache.lucene.store.DataOutput.writeInt(DataOutput.java:70)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.CodecUtil.writeHeader(CodecUtil.java:91)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.CodecUtil.writeIndexHeader(CodecUtil.java:134)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.lucene50.Lucene50DocValuesConsumer.&lt;init&gt;(Lucene50DocValuesConsumer.java:68)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.lucene50.Lucene50DocValuesFormat.fieldsConsumer(Lucene50DocValuesFormat.java:197)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.perfield.PerFieldDocValuesFormat$FieldsWriter.getInstance(PerFieldDocValuesFormat.java:187)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.perfield.PerFieldDocValuesFormat$FieldsWriter.addNumericField(PerFieldDocValuesFormat.java:111)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.DocValuesConsumer.mergeNumericField(DocValuesConsumer.java:252)
+   [junit4]    &gt; 	at org.apache.lucene.codecs.DocValuesConsumer.merge(DocValuesConsumer.java:163)
+   [junit4]    &gt; 	at org.apache.lucene.index.SegmentMerger.mergeDocValues(SegmentMerger.java:150)
+   [junit4]    &gt; 	at org.apache.lucene.index.SegmentMerger.merge(SegmentMerger.java:105)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.mergeMiddle(IndexWriter.java:4089)
+   [junit4]    &gt; 	at org.apache.lucene.index.IndexWriter.merge(IndexWriter.java:3664)
+   [junit4]    &gt; 	at org.apache.lucene.index.ConcurrentMergeScheduler.doMerge(ConcurrentMergeScheduler.java:588)
+   [junit4]    &gt; 	at org.apache.lucene.index.ConcurrentMergeScheduler$MergeThread.run(ConcurrentMergeScheduler.java:626)
+   [junit4] OK      0.12s | TestIndexWriterOnDiskFull.testCorruptionAfterDiskFullDuringMerge
+   [junit4] OK      0.00s | TestIndexWriterOnDiskFull.testImmediateDiskFull
+   [junit4]   2&gt; NOTE: leaving temporary files on disk at: /Users/sarowe/svn/lucene/dev/branches/branch_5x/lucene/build/core/test/J0/temp/lucene.index.TestIndexWriterOnDiskFull_6B36AD57BB5A1779-002
+   [junit4]   2&gt; NOTE: test params are: codec=Asserting(Lucene53): {id=PostingsFormat(name=MockRandom), f=PostingsFormat(name=Memory doPackFST= false), content=PostingsFormat(name=SimpleText)}, docValues:{numericdv=DocValuesFormat(name=Lucene50)}, sim=RandomSimilarityProvider(queryNorm=false,coord=crazy): {id=LM Jelinek-Mercer(0.700000), f=DFR I(ne)3(800.0), content=DFR GL2}, locale=ar_AE, timezone=America/Boa_Vista
+   [junit4]   2&gt; NOTE: Mac OS X 10.10.4 x86_64/Oracle Corporation 1.7.0_71 (64-bit)/cpus=8,threads=1,free=159451480,total=211288064
+   [junit4]   2&gt; NOTE: All tests run in this JVM: [TestIndexWriterOnDiskFull]
+   [junit4] Completed [1/1] in 74.53s, 4 tests, 1 error &lt;&lt;&lt; FAILURES!
+</pre>
+</div></div>
+
+<p>Not sure if they're related, but the most recent changes to this test were made under <a href="https://issues.apache.org/jira/browse/LUCENE-6579" title="Unexpected merge exceptions should be tragic to IndexWriter" class="issue-link" data-issue-key="LUCENE-6579"><del>LUCENE-6579</del></a> and <a href="https://issues.apache.org/jira/browse/LUCENE-6616" title="IndexWriter should list files once on init, and IFD should not suppress FNFE" class="issue-link" data-issue-key="LUCENE-6616"><del>LUCENE-6616</del></a>.</p>
+
+Current Element: item
+Title: [LUCENE-6687] MLT term frequency calculation bug
+Description: <p>In <tt>org.apache.lucene.queries.mlt.MoreLikeThis</tt>, there's a method <tt>retrieveTerms</tt> that receives a <tt>Map</tt> of fields, i.e. a document basically, but it doesn't have to be an existing doc.</p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746063/12746063_solr-mlt-tf-doubling-bug.png" align="absmiddle" border="0" height="500" /></p>
+
+<p>There are 2 for loops, one inside the other, which both loop through the same set of fields.<br/>
+That effectively doubles the term frequency for all the terms from fields that we provide in MLT QP <tt>qf</tt> parameter. <br/>
+It basically goes two times over the list of fields and accumulates the term frequencies from all fields into <tt>termFreqMap</tt>.</p>
+
+<p>The private method <tt>retrieveTerms</tt> is only called from one public method, the version of overloaded method <tt>like</tt> that receives a Map: so that private class member <tt>fieldNames</tt> is always derived from <tt>retrieveTerms</tt>'s argument <tt>fields</tt>.</p>
+
+<p>Uh, I don't understand what I wrote myself, but that basically means that, by the time <tt>retrieveTerms</tt> method gets called, its parameter fields and private member <tt>fieldNames</tt> always contain the same list of fields.</p>
+
+<p>Here's the proof:<br/>
+These are the final results of the calculation:</p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746060/12746060_solr-mlt-tf-doubling-bug-results.png" align="absmiddle" border="0" height="700" /></p>
+
+<p>And this is the actual <tt>thread_id:TID0009</tt> document, where those values were derived from (from fields <tt>title_mlt</tt> and <tt>pagetext_mlt</tt>):</p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746066/12746066_terms-glass.png" align="absmiddle" border="0" height="100" /></p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746065/12746065_terms-angry.png" align="absmiddle" border="0" height="100" /></p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746067/12746067_terms-how.png" align="absmiddle" border="0" height="100" /></p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746064/12746064_terms-accumulator.png" align="absmiddle" border="0" height="100" /></p>
+
+<p>Now, let's further test this hypothesis by seeing MLT QP in action from the AdminUI.<br/>
+Let's try to find docs that are More Like doc <tt>TID0009</tt>. <br/>
+Here's the interesting part, the query:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+q={!mlt qf=pagetext_mlt,title_mlt mintf=14 mindf=2 minwl=3 maxwl=15}TID0009
+</pre>
+</div></div>
+
+<p>We just saw, in the last image above, that the term accumulator appears <tt>7</tt> times in <tt>TID0009</tt> doc, but the <tt>accumulator</tt>'s TF was calculated as <tt>14</tt>.<br/>
+By using <tt>mintf=14</tt>, we say that, when calculating similarity, we don't want to consider terms that appear less than 14 times (when terms from fields <tt>title_mlt</tt> and <tt>pagetext_mlt</tt> are merged together) in <tt>TID0009</tt>.<br/>
+I added the term accumulator in only one other document (<tt>TID0004</tt>), where it appears only once, in the field <tt>title_mlt</tt>. </p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746061/12746061_solr-mlt-tf-doubling-bug-verify-accumulator-mintf14.png" align="absmiddle" border="0" height="500" /></p>
+
+<p>Let's see what happens when we use <tt>mintf=15</tt>:</p>
+
+<p><img src="https://issues.apache.org/jira/secure/attachment/12746072/12746072_solr-mlt-tf-doubling-bug-verify-accumulator-mintf15.png" align="absmiddle" border="0" height="500" /></p>
+
+<p>I should probably mention that multiple fields (<tt>qf</tt>) work because I applied the patch: <a href="https://issues.apache.org/jira/browse/SOLR-7143" class="external-link" rel="nofollow">SOLR-7143</a>.</p>
+
+<p>Bug, no?</p>
+
+Current Element: item
+Title: [LUCENE-6667] Custom attributes get cleared by SynonymFilter
+Description: <p>I believe the Lucene API enables users to define their custom attributes (by extending <tt>AttributeImpl</tt>) which may be added by custom Tokenizers. <br/>
+It seems, the <tt>clear</tt> and <tt>copyTo</tt> methods must be implemented to clear and restore the state of this custom attribute.</p>
+
+<p>However, some filters (in our case the SynonymFilter) simply call <tt>AttributeSource.clearAttributes</tt> without invoking <tt>copyTo</tt>. Instead the filter just resets some known attributes, simply ignoring all other custom attributes. In the end our custom attribute value is lost.</p>
+
+<p>Is this a bug in <tt>SynonymFilter</tt> (and others) or are we using the API in the wrong way?</p>
+
+<p>A solution might be of course to provide empty implementations of <tt>clear</tt> and <tt>copyTo</tt>, but I'm not sure if this has other unwanted effects.</p>
+
+Current Element: item
+Title: [LUCENE-6663] Null value dereference
+Description: <p>Found several cases of potential null dereference. Creating a single patch as suggested to fix them.</p>
+
+Current Element: item
+Title: [LUCENE-6689] Odd analysis problem with WDF, appears to be triggered by preceding analysis components
+Description: <p>This problem shows up for me in Solr, but I believe the issue is down at the Lucene level, so I've opened the issue in the LUCENE project.  We can move it if necessary.</p>
+
+<p>I've boiled the problem down to this minimum Solr fieldType:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>    &lt;fieldType name="testType" class="solr.TextField"
+sortMissingLast="true" positionIncrementGap="100"&gt;
+      &lt;analyzer type="index"&gt;
+        &lt;tokenizer
+class="org.apache.lucene.analysis.icu.segmentation.ICUTokenizerFactory"
+rulefiles="Latn:Latin-break-only-on-whitespace.rbbi"/&gt;
+        &lt;filter class="solr.PatternReplaceFilterFactory"
+          pattern="^(\p{Punct}*)(.*?)(\p{Punct}*)$"
+          replacement="$2"
+        /&gt;
+        &lt;filter class="solr.WordDelimiterFilterFactory"
+          splitOnCaseChange="1"
+          splitOnNumerics="1"
+          stemEnglishPossessive="1"
+          generateWordParts="1"
+          generateNumberParts="1"
+          catenateWords="1"
+          catenateNumbers="1"
+          catenateAll="0"
+          preserveOriginal="1"
+        /&gt;
+      &lt;/analyzer&gt;
+      &lt;analyzer type="query"&gt;
+        &lt;tokenizer
+class="org.apache.lucene.analysis.icu.segmentation.ICUTokenizerFactory"
+rulefiles="Latn:Latin-break-only-on-whitespace.rbbi"/&gt;
+        &lt;filter class="solr.PatternReplaceFilterFactory"
+          pattern="^(\p{Punct}*)(.*?)(\p{Punct}*)$"
+          replacement="$2"
+        /&gt;
+        &lt;filter class="solr.WordDelimiterFilterFactory"
+          splitOnCaseChange="1"
+          splitOnNumerics="1"
+          stemEnglishPossessive="1"
+          generateWordParts="1"
+          generateNumberParts="1"
+          catenateWords="0"
+          catenateNumbers="0"
+          catenateAll="0"
+          preserveOriginal="0"
+        /&gt;
+      &lt;/analyzer&gt;
+    &lt;/fieldType&gt;
+</pre>
+</div></div>
+
+<p>On Solr 4.7, if this type is given the input "aaa-bbb: ccc" then index analysis puts aaa at term position 1 and bbb at term position 2.  This seems perfectly reasonable to me.  In Solr 4.9, both terms end up at position 2.  This causes phrase queries which used to work to return zero hits.  The exact text of the phrase query is in the original documents that match on 4.7.</p>
+
+<p>If the custom rbbi (which is included unmodified from the lucene icu analysis source code) is not used, then the problem doesn't happen, because the punctuation doesn't make it to the PRF.  If the PatternReplaceFilterFactory is not present, then the problem doesn't happen.</p>
+
+<p>I can work around the problem by setting luceneMatchVersion to 4.7, but I think the behavior is a bug, and I would rather not continue to use 4.7 analysis when I upgrade to 5.x, which I hope to do soon.</p>
+
+<p>Whether luceneMatchversion is LUCENE_47 or LUCENE_4_9, query analysis puts aaa at term position 1 and bbb at term position 2.</p>
+
+Current Element: item
+Title: [LUCENE-6679] Filter's Weight.explain returns an explanation with isMatch==true even on documents that don't match
+Description: <p>This was reported by Trejkaz on the java-user list: <a href="http://search-lucene.com/m/l6pAi19h4Y3DclgB1&amp;subj=Re+What+on+earth+is+FilteredQuery+explain+doing+" class="external-link" rel="nofollow">http://search-lucene.com/m/l6pAi19h4Y3DclgB1&amp;subj=Re+What+on+earth+is+FilteredQuery+explain+doing+</a></p>
+
+Current Element: item
+Title: [LUCENE-6674] J9 assertion / crash in tests
+Description: <blockquote>
+<p>   06:45:04.031 0x2518500    j9mm.107    *   ** ASSERTION FAILED ** at ParallelScavenger.cpp:3053: ((false &amp;&amp; (_extensions-&gt;objectModel.isRemembered(objectPtr))))</p></blockquote>
+
+<p><a href="http://build-eu-00.elastic.co/job/lucene_linux_java8_64_test_only/55153/consoleFull" class="external-link" rel="nofollow">http://build-eu-00.elastic.co/job/lucene_linux_java8_64_test_only/55153/consoleFull</a></p>
+
+Current Element: item
+Title: [LUCENE-6656] StandardTokenizer.close() can leave the object in an uncloseable state
+Description: <p>The following pair of tests shows that if a reader throws IOException from the close() method, StandardTokenizer is left in an inconsistent state where it thinks you didn't call close on the tokeniser, even though you did. To make matters worse, it holds onto the reader so that any subsequent attempts to close the tokeniser will also fail.</p>
+
+<p>Possible workarounds:<br/>
+  1. Don't reuse tokenisers.<br/>
+  2. Still reuse tokenisers, but if close() throws anything, discard that tokeniser and create a new one.<br/>
+  3. Wrap every reader you pass in to ensure that close() can't throw an exception.</p>
+
+<p>Code follows:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+<span class="code-keyword">public</span> class TestStandardTokenizerCloseIssue {
+    @Test
+    <span class="code-keyword">public</span> void testStreamReuse() <span class="code-keyword">throws</span> Exception
+    {
+        <span class="code-comment">// Attempts to verify that consumeAndClose itself is not broken.
+</span>        <span class="code-keyword">try</span> (Tokenizer stream = <span class="code-keyword">new</span> StandardTokenizer())
+        {
+            stream.setReader(<span class="code-keyword">new</span> StringReader(<span class="code-quote">"reader #1"</span>));
+            assertThat(consumeAndClose(stream), contains(<span class="code-quote">"reader"</span>, <span class="code-quote">"1"</span>));
+
+            stream.setReader(<span class="code-keyword">new</span> StringReader(<span class="code-quote">"reader 2"</span>));
+            assertThat(consumeAndClose(stream), contains(<span class="code-quote">"reader"</span>, <span class="code-quote">"2"</span>));
+        }
+    }
+
+    @Test
+    <span class="code-keyword">public</span> void testStreamReuseAfterFailure() <span class="code-keyword">throws</span> Exception {
+        class FailingReader <span class="code-keyword">extends</span> Reader {
+            @Override
+            <span class="code-keyword">public</span> <span class="code-object">int</span> read(@NotNull <span class="code-object">char</span>[] buffer, <span class="code-object">int</span> off, <span class="code-object">int</span> len)
+                    <span class="code-keyword">throws</span> IOException {
+                <span class="code-keyword">throw</span> <span class="code-keyword">new</span> IOException(<span class="code-quote">"Synthetic exception"</span>);
+            }
+
+            @Override
+            <span class="code-keyword">public</span> void close() <span class="code-keyword">throws</span> IOException {
+                <span class="code-keyword">throw</span> <span class="code-keyword">new</span> IOException(<span class="code-quote">"Synthetic exception"</span>);
+            }
+        }
+
+        <span class="code-comment">// Simulating sharing the instance inside some factory.
+</span>        <span class="code-keyword">try</span> (Tokenizer stream = <span class="code-keyword">new</span> StandardTokenizer()) {
+
+            <span class="code-keyword">try</span> {
+                stream.setReader(<span class="code-keyword">new</span> FailingReader());
+                consumeAndClose(stream);
+                fail(<span class="code-quote">"Expected IOException"</span>);
+            } <span class="code-keyword">catch</span> (IOException e) {
+                <span class="code-comment">// Expected
+</span>            }
+
+            stream.setReader(<span class="code-keyword">new</span> StringReader(<span class="code-quote">"working reader"</span>));
+
+            <span class="code-comment">// Test fails here - even though the consumeAndClose above
+</span>            <span class="code-comment">// did close the tokeniser, the tokeniser didn't clear its reference to
+</span>            <span class="code-comment">// the reader.
+</span>            assertThat(consumeAndClose(stream), contains(<span class="code-quote">"working"</span>, <span class="code-quote">"reader"</span>));
+        }
+    }
+
+    <span class="code-comment">// Attempts to implement the correct workflow <span class="code-keyword">for</span> consuming a
+</span>    <span class="code-comment">// TokenStream.
+</span>    <span class="code-keyword">private</span> List&lt;<span class="code-object">String</span>&gt; consumeAndClose(TokenStream stream)
+            <span class="code-keyword">throws</span> Exception {
+        ImmutableList.Builder&lt;<span class="code-object">String</span>&gt; tokens = ImmutableList.builder();
+
+        <span class="code-comment">//The consumer calls reset().
+</span>        stream.reset();
+        <span class="code-keyword">try</span> {
+            <span class="code-comment">// The consumer retrieves attributes from the stream and stores
+</span>            <span class="code-comment">// local references to all attributes it wants to access.
+</span>            CharTermAttribute termAttribute =
+                stream.getAttribute(CharTermAttribute.class);
+            <span class="code-comment">// The consumer calls incrementToken() until it returns <span class="code-keyword">false</span>
+</span>            <span class="code-comment">// consuming the attributes after each call.
+</span>            <span class="code-keyword">while</span> (stream.incrementToken()) {
+                tokens.add(termAttribute.toString());
+            }
+            <span class="code-comment">// The consumer calls end() so that any end-of-stream operations
+</span>            <span class="code-comment">// can be performed.
+</span>            stream.end();
+        } <span class="code-keyword">finally</span> {
+            <span class="code-comment">// The consumer calls close() to release any resource when finished
+</span>            <span class="code-comment">// using the TokenStream.
+</span>            stream.close();
+        }
+
+        <span class="code-keyword">return</span> tokens.build();
+    }
+}
+</pre>
+</div></div>
+
+<p>Originally discovered on 4.10.4. Code has been ported to work on 5.1 since initially created and sooner or later I'll get to test 5.2.1, but I don't see anyone else having reported a similar issue yet, so I'm guessing it won't be fixed yet.</p>
+
+Current Element: item
+Title: [LUCENE-6655] All analysis factory constructors fail if the passed in map is immutable
+Description: <p>One of our tests tried to initialise a StandardTokenizer by passing a version into the factory. Unfortunately, this required passing a map:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+        <span class="code-keyword">return</span> <span class="code-keyword">new</span> StandardTokenizerFactory(ImmutableMap.of(
+            AbstractAnalysisFactory.LUCENE_MATCH_VERSION_PARAM,
+            Version.LUCENE_4_6_1.toString()
+        )).create();
+</pre>
+</div></div>
+
+<p>This then fails:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>java.lang.UnsupportedOperationException
+	at com.google.common.collect.ImmutableMap.remove(ImmutableMap.java:338)
+	at org.apache.lucene.analysis.util.AbstractAnalysisFactory.get(AbstractAnalysisFactory.java:122)
+	at org.apache.lucene.analysis.util.AbstractAnalysisFactory.&lt;init&gt;(AbstractAnalysisFactory.java:71)
+	at org.apache.lucene.analysis.util.TokenizerFactory.&lt;init&gt;(TokenizerFactory.java:70)
+	at org.apache.lucene.analysis.standard.StandardTokenizerFactory.&lt;init&gt;(StandardTokenizerFactory.java:42)
+</pre>
+</div></div>
+
+<p>I suspect that someone put in a `remove` when it should have been a `get`... bit of a weird mistake to make, especially when you don't know whether the map will permit it.</p>
+
+<p>I haven't verified whether the same occurs in later versions but getting updated to 5.2.1 will probably be the next thing on my list.</p>
+
+Current Element: item
+Title: [LUCENE-7022] smokeTestRelease.py should confirm the git revision is "recognized"
+Description: <p>Spinoff from <a href="https://issues.apache.org/jira/browse/LUCENE-7021" title="buildAndPushRelease.py should ensure you have no unpushed git changes" class="issue-link" data-issue-key="LUCENE-7021">LUCENE-7021</a>, but this issue aims to catch release bits built on unpushed changes in the smoke tester, by having it verify that the revision the bits were built from (stored in the JAR's META-INF) is in fact pushed to the public Apache git repository (git-wip-us.apache.org/repos/asf/lucene-solr.git).</p>
+
+<p>This seems very important, since a git newbie like myself could easily mess something up and somehow push a release containing local (not pushed) commits that I then lose when deleting my local clone.</p>
+
+Current Element: item
+Title: [LUCENE-7021] buildAndPushRelease.py should ensure you have no unpushed git changes
+Description: <p>I'm just a git newbie so I'm not sure how to add this to our release scripts, but I think it's quite important that we don't up and release something the world containing changes I had only committed locally and then failed to push.  What if I then remove that directory after we've released?</p>
+
+<p>We should also fix the release smoke tester to confirm the git revision is known ... I'll open a separate issue for that.</p>
+
+<p>I'm trying to be super careful not to do this for 5.5.0, but really the release script should catch this.</p>
+
+<p>I did a bit of googling and found the magic command <tt>git cherry -v origin/branch_5_5</tt> seemed to work (at least, it showed my one local commit), but e.g. "origin" is just a label I use (others use "upstream"), etc., so I'm not sure how to reliably do this... maybe we have to run <tt>git remote -v</tt> and figure out what label use use for the "official" (wip) Apache git instance?</p>
+
+Current Element: item
+Title: [LUCENE-7023] Implementation-Version spans 2 lines in MANIFEST.MF in our JARs
+Description: <p>The release smoke tester is angry about this.</p>
+
+<p>In the core Lucene jar for 5.4.1 we have this:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.4
+Created-By: 1.7.0_55-b13 (Oracle Corporation)
+Extension-Name: org.apache.lucene
+Specification-Title: Lucene Search Engine: core
+Specification-Version: 5.4.1
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: org.apache.lucene
+Implementation-Version: 5.4.1 1725212 - jpountz - 2016-01-18 11:44:59
+Implementation-Vendor: The Apache Software Foundation
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7
+</pre>
+</div></div>
+
+<p>But in the RC0 I'm building, I see this:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Ant-Version: Apache Ant 1.8.4
+Created-By: 1.7.0_71-b14 (Oracle Corporation)
+Extension-Name: org.apache.lucene
+Specification-Title: Lucene Search Engine: queryparser
+Specification-Version: 5.5.0
+Specification-Vendor: The Apache Software Foundation
+Implementation-Title: org.apache.lucene
+Implementation-Version: 5.5.0 850c6c248373d80617e771f776041fd0d59ac31a
+  - mike - 2016-02-11 11:48:18
+Implementation-Vendor: The Apache Software Foundation
+X-Compile-Source-JDK: 1.7
+X-Compile-Target-JDK: 1.7
+</pre>
+</div></div>
+
+<p>The <tt>Implementation-Version</tt> spans two lines ... maybe this OK, maybe it's even required (is there a max line length in the MANIFEST.MF spec?) but it makes me nervous...</p>
+
+Current Element: item
+Title: [LUCENE-7017] TestGeoPointQuery failure
+Description: <p>I hit this while beasting for another issue:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>-test:
+    [mkdir] Created dir: /l/trunk/lucene/build/sandbox/test
+[junit4:pickseed] Seed property 'tests.seed' already defined: 1EAB921E0532F649
+    [mkdir] Created dir: /l/trunk/lucene/build/sandbox/test/temp
+    [mkdir] Created dir: /l/trunk/.caches/test-stats/sandbox
+   [junit4] &lt;JUnit4&gt; says ????! Master seed: 1EAB921E0532F649
+   [junit4] Executing 1 suite with 1 JVM.
+   [junit4] 
+   [junit4] Started J0 PID(19596@localhost).
+   [junit4] Suite: org.apache.lucene.search.TestGeoPointQuery
+   [junit4] OK      0.02s | TestGeoPointQuery.testInvalidGeoDistanceQuery
+   [junit4] OK      0.07s | TestGeoPointQuery.testTooBigRadius
+   [junit4] OK      0.03s | TestGeoPointQuery.testGeoDistanceQuery
+   [junit4] OK      0.01s | TestGeoPointQuery.testPolyQuery
+   [junit4] OK      0.02s | TestGeoPointQuery.testMultiValuedQuery
+   [junit4] OK      0.27s | TestGeoPointQuery.testWholeMap
+   [junit4] IGNOR/A 0.01s | TestGeoPointQuery.testRandomBig
+   [junit4]    &gt; Assumption #1: 'nightly' test group is disabled (@Nightly())
+   [junit4] OK      0.01s | TestGeoPointQuery.testNonEmptyTermsEnum
+   [junit4] OK      0.24s | TestGeoPointQuery.testEncodeDecode
+   [junit4] OK      5.82s | TestGeoPointQuery.testMultiValued
+   [junit4]   2&gt; veebr 05, 2016 6:10:36 PM com.carrotsearch.randomizedtesting.RandomizedRunner$QueueUncaughtExceptionsHandler uncaughtException
+   [junit4]   2&gt; WARNING: Uncaught exception in thread: Thread[T0,5,TGRP-TestGeoPointQuery]
+   [junit4]   2&gt; java.lang.AssertionError
+   [junit4]   2&gt; 	at __randomizedtesting.SeedInfo.seed([1EAB921E0532F649]:0)
+   [junit4]   2&gt; 	at org.apache.lucene.search.GeoPointTermsEnum.&lt;init&gt;(GeoPointTermsEnum.java:65)
+   [junit4]   2&gt; 	at org.apache.lucene.search.GeoPointDistanceQueryImpl$GeoPointRadiusTermsEnum.&lt;init&gt;(GeoPointDistanceQueryImpl.java:58)
+   [junit4]   2&gt; 	at org.apache.lucene.search.GeoPointDistanceQueryImpl.getTermsEnum(GeoPointDistanceQueryImpl.java:47)
+   [junit4]   2&gt; 	at org.apache.lucene.search.MultiTermQuery.getTermsEnum(MultiTermQuery.java:304)
+   [junit4]   2&gt; 	at org.apache.lucene.search.GeoPointTermQueryConstantScoreWrapper$1.getDocIDs(GeoPointTermQueryConstantScoreWrapper.java:71)
+   [junit4]   2&gt; 	at org.apache.lucene.search.GeoPointTermQueryConstantScoreWrapper$1.scorer(GeoPointTermQueryConstantScoreWrapper.java:125)
+   [junit4]   2&gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.scorer(LRUQueryCache.java:617)
+   [junit4]   2&gt; 	at org.apache.lucene.search.AssertingWeight.scorer(AssertingWeight.java:61)
+   [junit4]   2&gt; 	at org.apache.lucene.search.BooleanWeight.scorer(BooleanWeight.java:389)
+   [junit4]   2&gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.scorer(LRUQueryCache.java:617)
+   [junit4]   2&gt; 	at org.apache.lucene.search.AssertingWeight.scorer(AssertingWeight.java:61)
+   [junit4]   2&gt; 	at org.apache.lucene.search.BooleanWeight.booleanScorer(BooleanWeight.java:343)
+   [junit4]   2&gt; 	at org.apache.lucene.search.BooleanWeight.bulkScorer(BooleanWeight.java:364)
+   [junit4]   2&gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.bulkScorer(LRUQueryCache.java:644)
+   [junit4]   2&gt; 	at org.apache.lucene.search.AssertingWeight.bulkScorer(AssertingWeight.java:68)
+   [junit4]   2&gt; 	at org.apache.lucene.search.AssertingWeight.bulkScorer(AssertingWeight.java:68)
+   [junit4]   2&gt; 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:666)
+   [junit4]   2&gt; 	at org.apache.lucene.search.AssertingIndexSearcher.search(AssertingIndexSearcher.java:91)
+   [junit4]   2&gt; 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:473)
+   [junit4]   2&gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$VerifyHits.test(BaseGeoPointTestCase.java:485)
+   [junit4]   2&gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$2._run(BaseGeoPointTestCase.java:741)
+   [junit4]   2&gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$2.run(BaseGeoPointTestCase.java:608)
+   [junit4]   2&gt; 
+   [junit4]   2&gt; NOTE: reproduce with: ant test  -Dtestcase=TestGeoPointQuery -Dtests.method=testRandomMedium -Dtests.seed=1EAB921E0532F649 -Dtests.locale=et-EE -Dtests.timezone=Europe/Budapest -Dtests.asserts=true -Dtests.file.encoding=ISO-8859-1
+   [junit4] ERROR   5.66s | TestGeoPointQuery.testRandomMedium &lt;&lt;&lt;
+   [junit4]    &gt; Throwable #1: com.carrotsearch.randomizedtesting.UncaughtExceptionError: Captured an uncaught exception in thread: Thread[id=16, name=T0, state=RUNNABLE, group=TGRP-TestGeoPointQuery]
+   [junit4]    &gt; 	at __randomizedtesting.SeedInfo.seed([1EAB921E0532F649:A375A5B64457952F]:0)
+   [junit4]    &gt; Caused by: java.lang.AssertionError
+   [junit4]    &gt; 	at __randomizedtesting.SeedInfo.seed([1EAB921E0532F649]:0)
+   [junit4]    &gt; 	at org.apache.lucene.search.GeoPointTermsEnum.&lt;init&gt;(GeoPointTermsEnum.java:65)
+   [junit4]    &gt; 	at org.apache.lucene.search.GeoPointDistanceQueryImpl$GeoPointRadiusTermsEnum.&lt;init&gt;(GeoPointDistanceQueryImpl.java:58)
+   [junit4]    &gt; 	at org.apache.lucene.search.GeoPointDistanceQueryImpl.getTermsEnum(GeoPointDistanceQueryImpl.java:47)
+   [junit4]    &gt; 	at org.apache.lucene.search.MultiTermQuery.getTermsEnum(MultiTermQuery.java:304)
+   [junit4]    &gt; 	at org.apache.lucene.search.GeoPointTermQueryConstantScoreWrapper$1.getDocIDs(GeoPointTermQueryConstantScoreWrapper.java:71)
+   [junit4]    &gt; 	at org.apache.lucene.search.GeoPointTermQueryConstantScoreWrapper$1.scorer(GeoPointTermQueryConstantScoreWrapper.java:125)
+   [junit4]    &gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.scorer(LRUQueryCache.java:617)
+   [junit4]    &gt; 	at org.apache.lucene.search.AssertingWeight.scorer(AssertingWeight.java:61)
+   [junit4]    &gt; 	at org.apache.lucene.search.BooleanWeight.scorer(BooleanWeight.java:389)
+   [junit4]    &gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.scorer(LRUQueryCache.java:617)
+   [junit4]    &gt; 	at org.apache.lucene.search.AssertingWeight.scorer(AssertingWeight.java:61)
+   [junit4]    &gt; 	at org.apache.lucene.search.BooleanWeight.booleanScorer(BooleanWeight.java:343)
+   [junit4]    &gt; 	at org.apache.lucene.search.BooleanWeight.bulkScorer(BooleanWeight.java:364)
+   [junit4]    &gt; 	at org.apache.lucene.search.LRUQueryCache$CachingWrapperWeight.bulkScorer(LRUQueryCache.java:644)
+   [junit4]    &gt; 	at org.apache.lucene.search.AssertingWeight.bulkScorer(AssertingWeight.java:68)
+   [junit4]    &gt; 	at org.apache.lucene.search.AssertingWeight.bulkScorer(AssertingWeight.java:68)
+   [junit4]    &gt; 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:666)
+   [junit4]    &gt; 	at org.apache.lucene.search.AssertingIndexSearcher.search(AssertingIndexSearcher.java:91)
+   [junit4]    &gt; 	at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:473)
+   [junit4]    &gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$VerifyHits.test(BaseGeoPointTestCase.java:485)
+   [junit4]    &gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$2._run(BaseGeoPointTestCase.java:741)
+   [junit4]    &gt; 	at org.apache.lucene.util.BaseGeoPointTestCase$2.run(BaseGeoPointTestCase.java:608)
+</pre>
+</div></div>
+
+<p>This is on commit #4569fd732aa1406763ed94f5df830b324a584a6b on master.</p>
+
+Current Element: item
+Title: [LUCENE-7044] Range faceting fails on SortedNumericDocValuesField
+Description: <p>Hi,</p>
+
+<p>Context: <a href="https://hibernate.atlassian.net/browse/HSEARCH-1927" class="external-link" rel="nofollow">https://hibernate.atlassian.net/browse/HSEARCH-1927</a></p>
+
+<p>By using <tt>SortedNumericDocValuesField</tt>, we can index several numeric values for the same field.</p>
+
+<p>But we can't execute a range query on it using <tt>LongRangeFacetCounts</tt>.</p>
+
+<p>Lucene fails with the following stacktrace:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+java.lang.IllegalStateException: unexpected docvalues type SORTED_NUMERIC <span class="code-keyword">for</span> field 'ingredients.price' (expected=NUMERIC). Use UninvertingReader or index with docvalues.
+	at org.apache.lucene.index.DocValues.checkField(DocValues.java:208)
+	at org.apache.lucene.index.DocValues.getNumeric(DocValues.java:227)
+	at org.apache.lucene.queries.function.valuesource.LongFieldSource.getValues(LongFieldSource.java:67)
+	at org.apache.lucene.facet.range.LongRangeFacetCounts.count(LongRangeFacetCounts.java:80)
+	at org.apache.lucene.facet.range.LongRangeFacetCounts.&lt;init&gt;(LongRangeFacetCounts.java:69)
+</pre>
+</div></div>
+
+<p>Either <tt>LongRangeFacetCounts</tt> needs some tweaking to accept <tt>SORTED_NUMERIC</tt> or we need another implementation to deal with <tt>SortedNumericDocValuesField</tt> (and probably an implementation of both for Doubles).</p>
+
+<p>&#8211; <br/>
+Guillaume</p>
+
+Current Element: item
+Title: [LUCENE-6994] GeoUtils Distance accuracy degrades with irregular rectangles
+Description: <p>This is a continuation of <a href="https://issues.apache.org/jira/browse/LUCENE-6908" title="TestGeoUtils.testGeoRelations is buggy with irregular rectangles" class="issue-link" data-issue-key="LUCENE-6908"><del>LUCENE-6908</del></a> which validates USGS accuracy of 0.5% for Sinnott haversine distance calculation. The issue also introduced a space segmentation approach for BKD distance queries near the poles. In <a href="https://issues.apache.org/jira/browse/LUCENE-6956" title="TestBKDTree.testRandomMedium() failure: some hits were wrong" class="issue-link" data-issue-key="LUCENE-6956"><del>LUCENE-6956</del></a> a restriction on distance size was initially removed to randomly test BKD distance queries at any range. This revealed an issue where distance error nearly doubles for exotic rectangles created by BKD's split algorithm. This issue will investigate potential distance error caused by the segmentation approach introduced in the second part of <a href="https://issues.apache.org/jira/browse/LUCENE-6908" title="TestGeoUtils.testGeoRelations is buggy with irregular rectangles" class="issue-link" data-issue-key="LUCENE-6908"><del>LUCENE-6908</del></a>.</p>
+
+Current Element: item
+Title: [LUCENE-6972] QueryBuilder should not differentiate single position and multiple positions queries when the analyzer produces synonyms.  
+Description: <p>When synonyms are involved the querybuilder differentiate two cases. When there is only one position the query is composed of one BooleanQuery which contains multiple should clauses. This does not interact well when trying to apply a minimum_should_match to the query. For instance if a field has a synonym rule like "foo,bar" the query "foo" will produce:</p>
+<blockquote><p>(foo bar)</p></blockquote>
+<p>... two optional clauses at the root level. If we apply a minimum should match of 50% then the query becomes:</p>
+<blockquote><p>(foo bar)~1 </p></blockquote>
+<p>This seems wrong, the terms are at the same position.<br/>
+IMO the querybuilder should produce the following query:</p>
+<blockquote><p>((foo bar))</p></blockquote>
+<p>... and a minimum should match of 50% should be not applicable to a query with only one optional clause at the root level.<br/>
+The case with multiple positions works as expected. <br/>
+The user query "test foo" generates:</p>
+<blockquote><p>(test (foo bar)) </p></blockquote>
+<p>... and if we apply a minimum should match of 50%:</p>
+<blockquote><p>(test (foo bar))~1</p></blockquote>
+
+Current Element: item
+Title: [LUCENE-5885] MergeScheduler should not implement Closeable
+Description: <p>MergeScheduler implements Closeable and IndexWriter calls ms.close() when it's closed. But MergeScheduler can be shared between several writers, which means closing it by any particular writer is wrong. We should rather implement some ref-counting logic such that each IW will call incRef() in the ctor, and decRef() on close(), and MergeScheduler will truly close when the ref-count hits 0.</p>
+
+<p>As it is now, if you share a MergeScheduler between writers and close() does something terminating, I doubt if it really works.</p>
+
+<p>Also, when I look at ConcurrentMergeScheduler.close(), it calls sync() which joins all MergeThreads. But if that CMS instance is shared between few IWs, doesn't it mean that a single IW calling close() waits on MergeThreads that execute merges of other IWs!?!? This seems ... wrong?</p>
+
+Current Element: item
+Title: [LUCENE-5888] FSTOrdPostingsFormat doesnt support ord()
+Description: <p>This is sort of the point of this PF, but it doesn't implement ord() or seek(ord).</p>
+
+Current Element: item
+Title: [LUCENE-5876] NPE in BoostQueryNodeBuilder.build
+Description: <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+  <span class="code-keyword">public</span> Query build(QueryNode queryNode) <span class="code-keyword">throws</span> QueryNodeException {
+    BoostQueryNode boostNode = (BoostQueryNode) queryNode;
+    QueryNode child = boostNode.getChild();
+
+    <span class="code-keyword">if</span> (child == <span class="code-keyword">null</span>) {
+      <span class="code-keyword">return</span> <span class="code-keyword">null</span>;
+    }
+
+    Query query = (Query) child
+        .getTag(QueryTreeBuilder.QUERY_TREE_BUILDER_TAGID);
+    query.setBoost(boostNode.getValue());
+
+    <span class="code-keyword">return</span> query;
+
+  }
+</pre>
+</div></div>
+<p>In BoostQueryNodeBuilder.build, the return variable, "query" can be null, but there is no error handling code for the return variable.  I think there should be a null checker for query like for child. </p>
+
+<p>&lt;Test Case&gt;</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+<span class="code-keyword">public</span> void test1() <span class="code-keyword">throws</span> Throwable {
+     BoostQueryNodeBuilder builder = <span class="code-keyword">new</span> BoostQueryNodeBuilder();
+     QuotedFieldQueryNode quotedNode = <span class="code-keyword">new</span> QuotedFieldQueryNode((java.lang.CharSequence)<span class="code-quote">"hi!"</span>, (java.lang.CharSequence)"", 10, 100);
+     BoostQueryNode node = <span class="code-keyword">new</span> BoostQueryNode((QueryNode)quotedNode, 2.0f);
+     builder.build((QueryNode)node);
+}
+</pre>
+</div></div>
+<p>&lt;Stack Trace&gt;</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+1) test1(Test0)java.lang.NullPointerException
+        at org.apache.lucene.queryparser.flexible.standard.builders.BoostQueryNodeBuilder.build(BoostQueryNodeBuilder.java:49)
+        at Test0.test1(Test0.java:4809)
+</pre>
+</div></div>
+
+Current Element: item
+Title: [LUCENE-5787] LuceneTestCase static leak checker interferes with Groovy unit tests
+Description: <p><tt>LuceneTestCase</tt>'s static memory leak checker can break Groovy subclasses. Specifically, Groovy classes have a synthetic static member variable of type <tt>org.codehaus.groovy.reflection.ClassInfo</tt>. If this variable grows too large then LTC will fail the test. Because the variable is added by the Groovy runtime instead of by the developer there is no way for the developer to clear the field themselves.</p>
+
+<p>Also note that the static leak checker does not ignore memory held by soft or weak references. These should be ignored because the memory retained by such fields will be reclaimed instead of triggering OutOfMemoryErrors.</p>
+
+<p>Note that because LTC is a base class for Solr's testing support classes this also affects <tt>SolrTestCaseJ4</tt> and <tt>AbstractSolrTestCase</tt>.</p>
+
+Current Element: item
+Title: [LUCENE-5781] don't create unused states in LevenshteinAutomata
+Description: <p>While working on <a href="https://issues.apache.org/jira/browse/LUCENE-5752" title="Explore light weight Automaton replacement" class="issue-link" data-issue-key="LUCENE-5752"><del>LUCENE-5752</del></a> I discovered that LevenshteinAutomata creates unused states with cycles.  I think they are basically harmless but we still shouldn't create them?</p>
+
+Current Element: item
+Title: [LUCENE-5753] Domain lists for UAX_URL_EMAIL analyzer are incomplete - cannot recognize ".local" among others
+Description: <p>uax_url_email analyzer appears unable to recognize the ".local" TLD among others. Bug can be reproduced by</p>
+
+<p>curl -XGET "ADDRESS/INDEX/_analyze?text=First%20Last%20lname@section.mycorp.local&amp;pretty&amp;analyzer=uax_url_email"</p>
+
+<p>will parse "lname@section.my" and "corp.local" as separate tokens, as opposed to</p>
+
+<p>curl -XGET "ADDRESS/INDEX/_analyze?text=First%20Last%20lname@section.mycorp.org&amp;pretty&amp;analyzer=uax_url_email"</p>
+
+<p>which will recognize "lname@section.mycorp.org".</p>
+
+<p>Can this be fixed by updating to a newer version? I am running ElasticSearch 0.90.5 and whatever Lucene version sits underneath that. My suspicion is that the TLD list the analyzer relies on (<a href="http://www.internic.net/zones/root.zone" class="external-link" rel="nofollow">http://www.internic.net/zones/root.zone</a>, I think?) is incomplete and needs updating. </p>
+
+Current Element: item
+Title: [LUCENE-5732] Possible order violation in lucene library version 2.4.1
+Description: <p>Hi,</p>
+
+<p>I am working on a research project on data race detection, and am using the DaCapo benchmarks for evaluation. I am using the benchmark lusearch from the 2009 suite, which uses lucene library 2.4.1.</p>
+
+<p>For one test case, I am monitoring a pair of accesses<br/>
+say, Lorg/apache/lucene/store/Directory;.&lt;init&gt; ()V:40(6) and<br/>
+Lorg/apache/lucene/store/FSDirectory;.close ()V:524(1). The format is &lt;class name&gt;.&lt;method name&gt; &lt;method desc&gt;:line(byte code index).</p>
+
+<p>During my work, I am getting AlreadyClosedExceptions on the FSDirectory from the ensureOpen() method for some threads, which I think is probably due to an order violation. I have actually introduced delays<br/>
+in my instrumentation which delays threads that execute the code in<br/>
+Lorg/apache/lucene/store/FSDirectory;.close ()V. This is causing the other query threads to throw an exception.</p>
+
+<p>Here is the exception trace:</p>
+
+<p>org.apache.lucene.store.AlreadyClosedException: this Directory is closed<br/>
+   at org.apache.lucene.store.Directory.ensureOpen(Directory.java:220)<br/>
+   at org.apache.lucene.store.FSDirectory.list(FSDirectory.java:320)<br/>
+   at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:533)<br/>
+   at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:316)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:206)<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.&lt;init&gt;(Search.java:207)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)<br/>
+org.apache.lucene.store.AlreadyClosedException: this Directory is closed<br/>
+   at org.apache.lucene.store.Directory.ensureOpen(Directory.java:220)<br/>
+   at org.apache.lucene.store.FSDirectory.list(FSDirectory.java:320)<br/>
+   at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:533)<br/>
+   at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:316)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:206)<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.&lt;init&gt;(Search.java:207)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)<br/>
+java.lang.NullPointerException<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.run(Search.java:226)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)<br/>
+java.lang.NullPointerException<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.run(Search.java:226)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)<br/>
+org.apache.lucene.store.AlreadyClosedException: this Directory is closed<br/>
+   at org.apache.lucene.store.Directory.ensureOpen(Directory.java:220)<br/>
+   at org.apache.lucene.store.FSDirectory.list(FSDirectory.java:320)<br/>
+   at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:533)<br/>
+   at org.apache.lucene.index.DirectoryIndexReader.open(DirectoryIndexReader.java:115)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:316)<br/>
+   at org.apache.lucene.index.IndexReader.open(IndexReader.java:206)<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.&lt;init&gt;(Search.java:207)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)<br/>
+java.lang.NullPointerException<br/>
+   at org.dacapo.lusearch.Search$QueryProcessor.run(Search.java:226)<br/>
+   at org.dacapo.lusearch.Search$QueryThread.run(Search.java:179)</p>
+
+<p>This exception does not happen during normal instrumentation, but can easily be reproduced by introducing just delays in the instrumentation. </p>
+
+Current Element: item
+Title: [LUCENE-5726] Make all resourceDescriptions of indexinputs consistent
+Description: <p>This was weakly tested in a roundabout way by an assert that tried to read a lucene 2.x index.</p>
+
+<p>We should try to make these consistent, on the other hand we should be careful about keeping the overhead of slice() relatively low (it would be nice to use this api in more places).</p>
+
+<p>And such things should be tested elsewhere, e.g. BaseDirectoryTestCase</p>
+
+Current Element: item
+Title: [LUCENE-5742] size of frq record is very huge in the table
+Description: <p>Hi, <br/>
+We are trying the use the lucene with jdbcstore, In production, the <br/>
+'frq' and 'tis' record size had grown too huge, <br/>
+We are unable to resize the these records to smaller size eventhough we try to call reindex and optimize using different mergeFactor and maxMergeDocs</p>

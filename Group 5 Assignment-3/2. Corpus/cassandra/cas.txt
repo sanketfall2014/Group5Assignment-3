@@ -1,0 +1,1048 @@
+-rw-r--r-- 1 root root     26518 Feb 11 23:50 ma-6-big-Summary.db
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-6-big-Statistics.db
+-rw-r--r-- 1 root root   2607705 Feb 11 23:50 ma-6-big-Index.db
+-rw-r--r-- 1 root root    192440 Feb 11 23:50 ma-6-big-Filter.db
+-rw-r--r-- 1 root root        10 Feb 11 23:50 ma-6-big-Digest.crc32
+-rw-r--r-- 1 root root  35212125 Feb 11 23:50 ma-6-big-Data.db
+-rw-r--r-- 1 root root      2156 Feb 11 23:50 ma-6-big-CRC.db
+-rw-r--r-- 1 root root        80 Feb 11 23:50 ma-7-big-TOC.txt
+-rw-r--r-- 1 root root     26518 Feb 11 23:50 ma-7-big-Summary.db
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-7-big-Statistics.db
+-rw-r--r-- 1 root root   2607614 Feb 11 23:50 ma-7-big-Index.db
+-rw-r--r-- 1 root root    192432 Feb 11 23:50 ma-7-big-Filter.db
+-rw-r--r-- 1 root root         9 Feb 11 23:50 ma-7-big-Digest.crc32
+-rw-r--r-- 1 root root  35190400 Feb 11 23:50 ma-7-big-Data.db
+-rw-r--r-- 1 root root      2152 Feb 11 23:50 ma-7-big-CRC.db
+-rw-r--r-- 1 root root        80 Feb 11 23:50 ma-5-big-TOC.txt
+-rw-r--r-- 1 root root    104178 Feb 11 23:50 ma-5-big-Summary.db
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-5-big-Statistics.db
+-rw-r--r-- 1 root root  10289077 Feb 11 23:50 ma-5-big-Index.db
+-rw-r--r-- 1 root root    757384 Feb 11 23:50 ma-5-big-Filter.db
+-rw-r--r-- 1 root root         9 Feb 11 23:50 ma-5-big-Digest.crc32
+-rw-r--r-- 1 root root 139201355 Feb 11 23:50 ma-5-big-Data.db
+-rw-r--r-- 1 root root      8508 Feb 11 23:50 ma-5-big-CRC.db
+root@bw-1:/srv/cassandra# md5sum /var/lib/cassandra/data/keyspace1/standard1-071efdc0d11811e590c3413ee28a6c90/ma-5-big-Summary.db
+5fca154fc790f7cfa37e8ad6d1c7552c
+</pre>
+</div></div>
+
+<p>BF ratio changed, node restarted:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>root@bw-1:/srv/cassandra# ls -ltr /var/lib/cassandra/data/keyspace1/standard1-071efdc0d11811e590c3413ee28a6c90/
+total 242168
+drwxr-xr-x 2 root root      4096 Feb 11 23:34 backups
+-rw-r--r-- 1 root root        80 Feb 11 23:50 ma-6-big-TOC.txt
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-6-big-Statistics.db
+-rw-r--r-- 1 root root   2607705 Feb 11 23:50 ma-6-big-Index.db
+-rw-r--r-- 1 root root    192440 Feb 11 23:50 ma-6-big-Filter.db
+-rw-r--r-- 1 root root        10 Feb 11 23:50 ma-6-big-Digest.crc32
+-rw-r--r-- 1 root root  35212125 Feb 11 23:50 ma-6-big-Data.db
+-rw-r--r-- 1 root root      2156 Feb 11 23:50 ma-6-big-CRC.db
+-rw-r--r-- 1 root root        80 Feb 11 23:50 ma-7-big-TOC.txt
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-7-big-Statistics.db
+-rw-r--r-- 1 root root   2607614 Feb 11 23:50 ma-7-big-Index.db
+-rw-r--r-- 1 root root    192432 Feb 11 23:50 ma-7-big-Filter.db
+-rw-r--r-- 1 root root         9 Feb 11 23:50 ma-7-big-Digest.crc32
+-rw-r--r-- 1 root root  35190400 Feb 11 23:50 ma-7-big-Data.db
+-rw-r--r-- 1 root root      2152 Feb 11 23:50 ma-7-big-CRC.db
+-rw-r--r-- 1 root root        80 Feb 11 23:50 ma-5-big-TOC.txt
+-rw-r--r-- 1 root root     10264 Feb 11 23:50 ma-5-big-Statistics.db
+-rw-r--r-- 1 root root  10289077 Feb 11 23:50 ma-5-big-Index.db
+-rw-r--r-- 1 root root    757384 Feb 11 23:50 ma-5-big-Filter.db
+-rw-r--r-- 1 root root         9 Feb 11 23:50 ma-5-big-Digest.crc32
+-rw-r--r-- 1 root root 139201355 Feb 11 23:50 ma-5-big-Data.db
+-rw-r--r-- 1 root root      8508 Feb 11 23:50 ma-5-big-CRC.db
+-rw-r--r-- 1 root root        80 Feb 12 00:03 ma-8-big-TOC.txt
+-rw-r--r-- 1 root root     14902 Feb 12 00:03 ma-8-big-Summary.db
+-rw-r--r-- 1 root root     10264 Feb 12 00:03 ma-8-big-Statistics.db
+-rw-r--r-- 1 root root   1458631 Feb 12 00:03 ma-8-big-Index.db
+-rw-r--r-- 1 root root     10808 Feb 12 00:03 ma-8-big-Filter.db
+-rw-r--r-- 1 root root        10 Feb 12 00:03 ma-8-big-Digest.crc32
+-rw-r--r-- 1 root root  19660275 Feb 12 00:03 ma-8-big-Data.db
+-rw-r--r-- 1 root root      1204 Feb 12 00:03 ma-8-big-CRC.db
+-rw-r--r-- 1 root root     26518 Feb 12 00:04 ma-7-big-Summary.db
+-rw-r--r-- 1 root root     26518 Feb 12 00:04 ma-6-big-Summary.db
+-rw-r--r-- 1 root root    104178 Feb 12 00:04 ma-5-big-Summary.db
+root@bw-1:/srv/cassandra# md5sum /var/lib/cassandra/data/keyspace1/standard1-071efdc0d11811e590c3413ee28a6c90/ma-5-big-Summary.db 
+5fca154fc790f7cfa37e8ad6d1c7552c 
+</pre>
+</div></div>
+
+<p>This hurts startup time and appears to do nothing useful whatsoever.</p>
+
+Current Element: item
+Title: [CASSANDRA-11201] Compaction memory fault in 3.0.3
+Description: <p>I have been encountering the following errors periodically on the system:</p>
+
+<p>ERROR <span class="error">&#91;CompactionExecutor:6&#93;</span> 2016-02-20 16:54:09,069 CassandraDaemon.java:195 - Exception in thread Thread<span class="error">&#91;CompactionExecutor:6,1,main&#93;</span><br/>
+java.lang.InternalError: a fault occurred in a recent unsafe memory access operation in compiled Java code<br/>
+        at org.apache.cassandra.utils.ByteBufferUtil.readShortLength(ByteBufferUtil.java:366) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.ByteBufferUtil.readWithShortLength(ByteBufferUtil.java:376) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.io.sstable.format.big.BigTableScanner.seekToCurrentRangeStart(BigTableScanner.java:175) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.io.sstable.format.big.BigTableScanner.access$200(BigTableScanner.java:51) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.io.sstable.format.big.BigTableScanner$KeyScanningIterator.computeNext(BigTableScanner.java:280) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.io.sstable.format.big.BigTableScanner$KeyScanningIterator.computeNext(BigTableScanner.java:260) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.AbstractIterator.hasNext(AbstractIterator.java:47) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.io.sstable.format.big.BigTableScanner.hasNext(BigTableScanner.java:240) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.MergeIterator$Candidate.advance(MergeIterator.java:369) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.MergeIterator$ManyToOne.advance(MergeIterator.java:189) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.MergeIterator$ManyToOne.computeNext(MergeIterator.java:158) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.AbstractIterator.hasNext(AbstractIterator.java:47) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.partitions.UnfilteredPartitionIterators$2.hasNext(UnfilteredPartitionIterators.java:150) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.transform.BasePartitions.hasNext(BasePartitions.java:72) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.compaction.CompactionIterator.hasNext(CompactionIterator.java:226) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.compaction.CompactionTask.runMayThrow(CompactionTask.java:177) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.utils.WrappedRunnable.run(WrappedRunnable.java:28) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.compaction.CompactionTask.executeInternal(CompactionTask.java:78) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.compaction.AbstractCompactionTask.execute(AbstractCompactionTask.java:60) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at org.apache.cassandra.db.compaction.CompactionManager$BackgroundCompactionCandidate.run(CompactionManager.java:263) ~<span class="error">&#91;apache-cassandra-3.0.3.jar:3.0.3&#93;</span><br/>
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~<span class="error">&#91;na:1.8.0_65&#93;</span><br/>
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~<span class="error">&#91;na:1.8.0_65&#93;</span><br/>
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~<span class="error">&#91;na:1.8.0_65&#93;</span><br/>
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) <span class="error">&#91;na:1.8.0_65&#93;</span><br/>
+        at java.lang.Thread.run(Thread.java:745) <span class="error">&#91;na:1.8.0_65&#93;</span></p>
+
+<p>This problem persisted after several reboots and even when most other applications on the system were terminated to provide more memory availability.</p>
+
+<p>The problem also occurs when running 'nodetool compact'.</p>
+
+Current Element: item
+Title: [CASSANDRA-11174] org.apache.cassandra.metrics:type=Streaming,name=ActiveOutboundStreams is always zero
+Description: <p><tt>org.apache.cassandra.metrics:type=Streaming,name=TotalIncomingBytes</tt> and <tt>org.apache.cassandra.metrics:type=Streaming,name=TotalOutgoingBytes</tt> work fine but <tt>org.apache.cassandra.metrics:type=Streaming,name=ActiveOutboundStreams</tt> is always 0.</p>
+
+Current Element: item
+Title: [CASSANDRA-11127] index_summary_upgrade_test.py is failing
+Description: <p>index_summary_upgrade_test.py is failing on the cassandra-3.0 branch, when run without vnodes. The exception I'm seeing on cassci is different than locally. The cassci failure is <a href="http://cassci.datastax.com/job/cassandra-3.0_novnode_dtest/157/testReport/index_summary_upgrade_test/TestUpgradeIndexSummary/test_upgrade_index_summary/" class="external-link" rel="nofollow">here</a>.</p>
+
+<p>Locally I see the following:</p>
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+'ERROR [SSTableBatchOpen:2] 2016-02-05 15:29:04,304 CassandraDaemon.java:195 - Exception in thread <span class="code-object">Thread</span>[SSTableBatchOpen:2,5,main]\njava.lang.AssertionError: Illegal bounds [4..8); size: 4\n\tat org.apache.cassandra.io.util.Memory.checkBounds(Memory.java:339) ~[main/:na]\n\tat org.apache.cassandra.io.util.Memory.getInt(Memory.java:292) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.IndexSummary.getPositionInSummary(IndexSummary.java:146) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.IndexSummary.getKey(IndexSummary.java:151) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader.validateSummarySamplingLevel(SSTableReader.java:928) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader.load(SSTableReader.java:748) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader.load(SSTableReader.java:705) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader.open(SSTableReader.java:491) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader.open(SSTableReader.java:374) ~[main/:na]\n\tat org.apache.cassandra.io.sstable.format.SSTableReader$4.run(SSTableReader.java:533) ~[main/:na]\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[na:1.8.0_66]\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_66]\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]\n\tat java.lang.<span class="code-object">Thread</span>.run(<span class="code-object">Thread</span>.java:745) [na:1.8.0_66]']
+</pre>
+</div></div>
+
+<p>Node log is attached.</p>
+
+Current Element: item
+Title: [CASSANDRA-11126] select_distinct_with_deletions_test failing on non-vnode environments
+Description: <p>Looks like this was fixed in <a href="https://issues.apache.org/jira/browse/CASSANDRA-10762" title="select_distinct_with_deletions_test failing in mixed version cluster" class="issue-link" data-issue-key="CASSANDRA-10762"><del>CASSANDRA-10762</del></a>, but not for non-vnode environments:</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+$ DISABLE_VNODES=yes KEEP_TEST_DIR=yes CASSANDRA_VERSION=git:cassandra-3.0 PRINT_DEBUG=<span class="code-keyword">true</span> nosetests -s -v upgrade_tests/cql_tests.py:TestCQLNodes2RF1.select_distinct_with_deletions_test
+select_distinct_with_deletions_test (upgrade_tests.cql_tests.TestCQLNodes2RF1) ... cluster ccm directory: /tmp/dtest-UXb0un
+http:<span class="code-comment">//git-wip-us.apache.org/repos/asf/cassandra.git git:cassandra-3.0
+</span>Custom init_config not found. Setting defaults.
+Done setting configuration options:
+{   'num_tokens': None,
+    'phi_convict_threshold': 5,
+    'range_request_timeout_in_ms': 10000,
+    'read_request_timeout_in_ms': 10000,
+    'request_timeout_in_ms': 10000,
+    'truncate_request_timeout_in_ms': 10000,
+    'write_request_timeout_in_ms': 10000}
+getting <span class="code-keyword">default</span> job version <span class="code-keyword">for</span> 3.0.3
+UpgradePath(starting_version='binary:2.2.3', upgrade_version=None)
+starting from 2.2.3
+upgrading to {'install_dir': '/home/ryan/.ccm/repository/gitCOLONcassandra-3.0'}
+Querying upgraded node
+FAIL
+
+======================================================================
+FAIL: select_distinct_with_deletions_test (upgrade_tests.cql_tests.TestCQLNodes2RF1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File <span class="code-quote">"/home/ryan/git/datastax/cassandra-dtest/upgrade_tests/cql_tests.py"</span>, line 3360, in select_distinct_with_deletions_test
+    self.assertEqual(9, len(rows))
+AssertionError: 9 != 8
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+dtest: DEBUG: cluster ccm directory: /tmp/dtest-UXb0un
+dtest: DEBUG: Custom init_config not found. Setting defaults.
+dtest: DEBUG: Done setting configuration options:
+{   'num_tokens': None,
+    'phi_convict_threshold': 5,
+    'range_request_timeout_in_ms': 10000,
+    'read_request_timeout_in_ms': 10000,
+    'request_timeout_in_ms': 10000,
+    'truncate_request_timeout_in_ms': 10000,
+    'write_request_timeout_in_ms': 10000}
+dtest: DEBUG: getting <span class="code-keyword">default</span> job version <span class="code-keyword">for</span> 3.0.3
+dtest: DEBUG: UpgradePath(starting_version='binary:2.2.3', upgrade_version=None)
+dtest: DEBUG: starting from 2.2.3
+dtest: DEBUG: upgrading to {'install_dir': '/home/ryan/.ccm/repository/gitCOLONcassandra-3.0'}
+dtest: DEBUG: Querying upgraded node
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------
+
+----------------------------------------------------------------------
+Ran 1 test in 56.022s
+
+FAILED (failures=1)
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-11138] cassandra-stress tool - clustering key values not distributed
+Description: <p>I am trying to get the stress tool to generate random values for three clustering keys. I am trying to simulate collecting events per user id (text, partition key). Events have a session type (text), event type (text), and creation time (timestamp) (clustering keys, in that order). For testing purposes I ended up with the following column spec:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>columnspec:
+- name: created_at
+  cluster: uniform(10..10)
+- name: event_type
+  size: uniform(5..10)
+  population: uniform(1..30)
+  cluster: uniform(1..30)
+- name: session_type
+  size: fixed(5)
+  population: uniform(1..4)
+  cluster: uniform(1..4)
+- name: user_id
+  size: fixed(15)
+  population: uniform(1..1000000)
+- name: message
+  size: uniform(10..100)
+  population: uniform(1..100B)
+</pre>
+</div></div>
+
+<p>My expectation was that this would lead to anywhere between 10 and 1200 rows to be created per partition key. But it seems that exactly 10 rows are being created, with the <tt>created_at</tt> timestamp being the only variable that is assigned variable values (per partition key). The <tt>session_type</tt> and <tt>event_type</tt> variables are assigned fixed values. This is even the case if I set the cluster distribution to uniform(30..30) and uniform(4..4) respectively. With this setting I expected 1200 rows per partition key to be created, as announced when running the stress tool, but it is still 10.</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>[rsteppac@centos bin]$ ./cassandra-stress user profile=../batch_too_large.yaml ops\(insert=1\) -log level=verbose file=~/centos_eventy_patient_session_event_timestamp_insert_only.log -node 10.211.55.8
+…
+Created schema. Sleeping 1s for propagation.
+Generating batches with [1..1] partitions and [1..1] rows (of [1200..1200] total rows in the partitions)
+Improvement over 4 threadCount: 19%
+...
+</pre>
+</div></div>
+
+<p>Sample of generated data:</p>
+
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>cqlsh&gt; select user_id, event_type, session_type, created_at from stresscql.batch_too_large LIMIT 30 ;
+
+user_id                     | event_type       | session_type | created_at
+-----------------------------+------------------+--------------+--------------------------
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 2012-10-19 08:14:11+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 2004-11-08 04:04:56+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 2002-10-15 00:39:23+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1999-08-31 19:56:30+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1999-04-02 20:46:26+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1990-10-08 03:27:17+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1984-03-31 23:30:34+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1975-11-16 02:41:28+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1970-04-07 07:23:48+0000
+  %\x7f\x03/.d29&lt;i\$u\x114 | Y ?\x1eR|\x13\t| |     P+|u\x0b | 1970-03-08 23:23:04+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2015-10-12 17:48:51+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2010-10-28 06:21:13+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2005-06-28 03:34:41+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2005-01-29 05:26:21+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2003-03-27 01:31:24+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2002-03-29 14:22:43+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 2000-06-15 14:54:29+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 1998-03-08 13:31:54+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 1988-01-21 06:38:40+0000
+     N!\x0eUA7^r7d\x06J&lt;v&lt; |  \x1bm/c/Th\x07U |        E}P^k | 1975-08-03 21:16:47+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 2014-11-23 17:05:45+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 2012-02-23 23:20:54+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 2012-02-19 12:05:15+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 2005-10-17 04:22:45+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 2003-02-24 19:45:06+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 1996-12-18 06:18:31+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 1991-06-10 22:07:45+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 1983-05-05 12:29:09+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 1972-04-17 21:24:52+0000
+oy\x1c0077H"i\x07\x13_%\x06 |    | \nz@Qj\x1cB |        E}P^k | 1971-05-09 23:00:02+0000
+
+(30 rows)
+cqlsh&gt;
+</pre>
+</div></div>
+
+<p>If I remove the <tt>created_at</tt> clustering key, then the other two clustering keys are being assigned variable values per partition key.</p>
+
+Current Element: item
+Title: [CASSANDRA-11082] netty's level hadn't prevent OOM when receiver handle slow.
+Description: <p>as we know, netty will OOM when received client is slow.</p>
+
+<p>due to  if receiver can't handle response fast so that cassandra server can't flush data. it will cause channeloutbuffer with big size.</p>
+
+<p>we see the cassandra had configure write high/low water level, but I can't found any code to judge iswritable. so it will have possible OOM</p>
+
+<p>why cassandra hadn't handle this case?</p>
+
+
+Current Element: item
+Title: [CASSANDRA-11109] Cassandra process killed by OS due to out of memory issue
+Description: <p>After we upgraded Cassandra from 2.1.12 to 2.2.4 on one of our nodes (A three nodes Cassandra cluster), we've been experiencing an og-going issue with cassandra process running with continuously increasing memory util killed by OOM. </p>
+
+<blockquote>
+<p>Feb  1 23:53:10 kernel: <span class="error">&#91;24135455.025185&#93;</span> <span class="error">&#91;19862&#93;</span>   494 19862 133728623  7379077  139068        0             0 java<br/>
+Feb  1 23:53:10 kernel: <span class="error">&#91;24135455.029678&#93;</span> Out of memory: Kill process 19862 (java) score 973 or sacrifice child<br/>
+Feb  1 23:53:10 kernel: <span class="error">&#91;24135455.035434&#93;</span> Killed process 19862 (java) total-vm:534918588kB, anon-rss:29413728kB, file-rss:102940kB</p></blockquote>
+
+Current Element: item
+Title: [CASSANDRA-11105] cassandra-stress tool - InvalidQueryException: Batch too large
+Description: <p>I am using Cassandra 2.2.4 and I am struggling to get the cassandra-stress tool to work for my test scenario. I have followed the example on <a href="http://www.datastax.com/dev/blog/improved-cassandra-2-1-stress-tool-benchmark-any-schema" class="external-link" rel="nofollow">http://www.datastax.com/dev/blog/improved-cassandra-2-1-stress-tool-benchmark-any-schema</a> to create a yaml file describing my test (attached).</p>
+
+<p>I am collecting events per user id (text, partition key). Events have a session type (text), event type (text), and creation time (timestamp) (clustering keys, in that order). Plus some more attributes required for rendering the events in a UI. For testing purposes I ended up with the following column spec and insert distribution:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>columnspec:
+  - name: created_at
+    cluster: uniform(10..10000)
+  - name: event_type
+    size: uniform(5..10)
+    population: uniform(1..30)
+    cluster: uniform(1..30)
+  - name: session_type
+    size: fixed(5)
+    population: uniform(1..4)
+    cluster: uniform(1..4)
+  - name: user_id
+    size: fixed(15)
+    population: uniform(1..1000000)
+  - name: message
+    size: uniform(10..100)
+    population: uniform(1..100B)
+
+insert:
+  partitions: fixed(1)
+  batchtype: UNLOGGED
+  select: fixed(1)/1200000
+</pre>
+</div></div>
+
+<p>Running stress tool for just the insert prints </p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Generating batches with [1..1] partitions and [0..1] rows (of [10..1200000] total rows in the partitions)
+</pre>
+</div></div>
+<p>and then immediately starts flooding me with <tt>com.datastax.driver.core.exceptions.InvalidQueryException: Batch too large</tt>. </p>
+
+<p>Why I should be exceeding the <tt>batch_size_fail_threshold_in_kb: 50</tt> in the <tt>cassandra.yaml</tt> I do not understand. My understanding is that the stress tool should generate one row per batch. The size of a single row should not exceed <tt>8+10*3+5*3+15*3+100*3 = 398 bytes</tt>. Assuming a worst case of all text characters being 3 byte unicode characters. </p>
+
+<p>This is how I start the attached user scenario:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>[rsteppac@centos bin]$ ./cassandra-stress user profile=../batch_too_large.yaml ops\(insert=1\) -log level=verbose file=~/centos_event_by_patient_session_event_timestamp_insert_only.log -node 10.211.55.8
+INFO  08:00:07 Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+INFO  08:00:08 Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+INFO  08:00:08 New Cassandra host /10.211.55.8:9042 added
+Connected to cluster: Titan_DEV
+Datatacenter: datacenter1; Host: /10.211.55.8; Rack: rack1
+Created schema. Sleeping 1s for propagation.
+Generating batches with [1..1] partitions and [0..1] rows (of [10..1200000] total rows in the partitions)
+com.datastax.driver.core.exceptions.InvalidQueryException: Batch too large
+	at com.datastax.driver.core.exceptions.InvalidQueryException.copy(InvalidQueryException.java:35)
+	at com.datastax.driver.core.DefaultResultSetFuture.extractCauseFromExecutionException(DefaultResultSetFuture.java:271)
+	at com.datastax.driver.core.DefaultResultSetFuture.getUninterruptibly(DefaultResultSetFuture.java:185)
+	at com.datastax.driver.core.AbstractSession.execute(AbstractSession.java:55)
+	at org.apache.cassandra.stress.operations.userdefined.SchemaInsert$JavaDriverRun.run(SchemaInsert.java:87)
+	at org.apache.cassandra.stress.Operation.timeWithRetry(Operation.java:159)
+	at org.apache.cassandra.stress.operations.userdefined.SchemaInsert.run(SchemaInsert.java:119)
+	at org.apache.cassandra.stress.StressAction$Consumer.run(StressAction.java:309)
+Caused by: com.datastax.driver.core.exceptions.InvalidQueryException: Batch too large
+	at com.datastax.driver.core.Responses$Error.asException(Responses.java:125)
+	at com.datastax.driver.core.DefaultResultSetFuture.onSet(DefaultResultSetFuture.java:120)
+	at com.datastax.driver.core.RequestHandler.setFinalResult(RequestHandler.java:186)
+	at com.datastax.driver.core.RequestHandler.access$2300(RequestHandler.java:45)
+	at com.datastax.driver.core.RequestHandler$SpeculativeExecution.setFinalResult(RequestHandler.java:752)
+	at com.datastax.driver.core.RequestHandler$SpeculativeExecution.onSet(RequestHandler.java:576)
+	at com.datastax.driver.core.Connection$Dispatcher.channelRead0(Connection.java:1003)
+	at com.datastax.driver.core.Connection$Dispatcher.channelRead0(Connection.java:925)
+	at com.datastax.shaded.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:339)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:324)
+	at com.datastax.shaded.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:254)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:339)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:324)
+	at com.datastax.shaded.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:339)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:324)
+	at com.datastax.shaded.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:242)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:339)
+	at com.datastax.shaded.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:324)
+	at com.datastax.shaded.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:847)
+	at com.datastax.shaded.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at com.datastax.shaded.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at com.datastax.shaded.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:111)
+	at java.lang.Thread.run(Thread.java:745)
+...
+</pre>
+</div></div>
+
+<p>The C* log:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>INFO  08:00:04 Listening for thrift clients...
+WARN  08:00:07 Detected connection using native protocol version 2. Both version 1 and 2 of the native protocol are now deprecated and support will be removed in Cassandra 3.0. You are encouraged to upgrade to a client driver using version 3 of the native protocol
+ERROR 08:00:14 Batch of prepared statements for [stresscql.batch_too_large] is of size 58024, exceeding specified threshold of 51200 by 6824. (see batch_size_fail_threshold_in_kb)
+ERROR 08:00:15 Batch of prepared statements for [stresscql.batch_too_large] is of size 77985, exceeding specified threshold of 51200 by 26785. (see batch_size_fail_threshold_in_kb)
+...
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-11091] Insufficient disk space in memtable flush should trigger disk fail policy
+Description: <p>If there's insufficient disk space to flush, DiskAwareRunnable.getWriteDirectory throws and the flush fails. The commitlogs then grow indefinitely because the latch is never counted down.</p>
+
+<p>This should be an FSError so the disk fail policy is triggered. </p>
+
+Current Element: item
+Title: [CASSANDRA-11162] upgrade tests failing with UDF configuration error
+Description: <p>Some of the upgrade dtests have a configuration error that causes them to fail when creating a UDF. The error message is</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+User-defined-functions are disabled in cassandra.yaml - set enable_user_defined_functions=<span class="code-keyword">true</span> to enable <span class="code-keyword">if</span> you are aware of the security risks
+</pre>
+</div></div>
+
+<p>Though it varies slightly between C* versions.</p>
+
+<p>Fixing this is probably a matter of setting this value in <tt>cassandra.yaml</tt> on certain upgrade paths.</p>
+
+<p>The tests failing can be found here:</p>
+
+<p><a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD/parallel_upgrade_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD/parallel_upgrade_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD/parallel_upgrade_with_internode_ssl_test/</a><br/>
+<a href="http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD/parallel_upgrade_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/upgrade_tests-all/2/testReport/upgrade_tests.upgrade_through_versions_test/ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD/parallel_upgrade_test/</a></p>
+
+
+<p>The tests' names are</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD.parallel_upgrade_with_internode_ssl_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_EndsAt_Trunk_HEAD.parallel_upgrade_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD.parallel_upgrade_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD.parallel_upgrade_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_RandomPartitioner_Skip_2_2_EndsAt_Trunk_HEAD.parallel_upgrade_with_internode_ssl_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_Skip_2_2_EndsAt_Trunk_HEAD.parallel_upgrade_with_internode_ssl_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD.parallel_upgrade_with_internode_ssl_test
+upgrade_tests.upgrade_through_versions_test.py:ProtoV3Upgrade_AllVersions_RandomPartitioner_EndsAt_Trunk_HEAD.parallel_upgrade_test
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-11016] Fix flapping dtests with "unavailable" and "cannot achieve consistency" errors
+Description: <p>A number of dtests flap when they run a query and get an unavailable exception or can't meet a particular CL. Examples include:</p>
+
+<p><a href="http://cassci.datastax.com/job/cassandra-2.2_dtest/470/testReport/replace_address_test/TestReplaceAddress/replace_first_boot_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/job/cassandra-2.2_dtest/470/testReport/replace_address_test/TestReplaceAddress/replace_first_boot_test/</a></p>
+
+<p><a href="http://cassci.datastax.com/view/cassandra-3.0/job/cassandra-3.0_dtest/488/testReport/upgrade_tests.cql_tests/TestCQLNodes3RF3/range_tombstones_test/" class="external-link" rel="nofollow">http://cassci.datastax.com/view/cassandra-3.0/job/cassandra-3.0_dtest/488/testReport/upgrade_tests.cql_tests/TestCQLNodes3RF3/range_tombstones_test/</a></p>
+
+<p>This seems to be a different issue than <a href="https://issues.apache.org/jira/browse/CASSANDRA-10730" title="periodic timeout errors in dtest" class="issue-link" data-issue-key="CASSANDRA-10730"><del>CASSANDRA-10730</del></a> &#8211; bumping instance sizes to m3.2xl stopped that class of error, but bumping instance sizes to i2.4xl did not stop the errors described here.</p>
+
+<p>I'm probably the best person to tackle this, but won't get to it for a bit, so <a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=philipthompson" class="user-hover" rel="philipthompson">Philip Thompson</a> might take it if he has time sooner.</p>
+
+Current Element: item
+Title: [CASSANDRA-11011] DateTieredCompactionStrategy not compacting  sstables in 2.1.12
+Description: <p>The following CF is never compacting from day one</p>
+
+<p>CREATE TABLE globaldb."DynamicParameter" (<br/>
+    dp_id bigint PRIMARY KEY,<br/>
+    dp_advertiser_id int,<br/>
+    dp_application_id int,<br/>
+    dp_application_user_id bigint,<br/>
+    dp_banner_id int,<br/>
+    dp_campaign_id int,<br/>
+    dp_click_timestamp timestamp,<br/>
+    dp_country text,<br/>
+    dp_custom_parameters text,<br/>
+    dp_flags bigint,<br/>
+    dp_ip int,<br/>
+    dp_machine_id text,<br/>
+    dp_string text<br/>
+) WITH bloom_filter_fp_chance = 0.01<br/>
+    AND caching = '</p>
+{"keys":"ALL", "rows_per_partition":"NONE"}
+<p>'<br/>
+    AND comment = ''<br/>
+    AND compaction = </p>
+{'max_sstable_age_days': '30', 'base_time_seconds': '3600', 'timestamp_resolution': 'MILLISECONDS', 'enabled': 'true', 'min_threshold': '2', 'class': 'org.apache.cassandra.db.compaction.DateTieredCompactionStrategy'}
+<p>    AND compression = </p>
+{'sstable_compression': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+<p>    AND dclocal_read_repair_chance = 0.2<br/>
+    AND default_time_to_live = 10713600<br/>
+    AND gc_grace_seconds = 1209600<br/>
+    AND max_index_interval = 2048<br/>
+    AND memtable_flush_period_in_ms = 0<br/>
+    AND min_index_interval = 128<br/>
+    AND read_repair_chance = 0.0<br/>
+    AND speculative_retry = '99.0PERCENTILE';</p>
+
+Current Element: item
+Title: [CASSANDRA-11008] Null Pointer Exception when upgrading from 2.1.12 to 3.0.2
+Description: <p>When upgrading a node from 2.1.12 to 3.0.2, I get a NPE during startup.</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+INFO  [main] 2016-01-13 19:25:52,566 LegacyHintsMigrator.java:88 - Migrating legacy hints to <span class="code-keyword">new</span> storage
+INFO  [main] 2016-01-13 19:25:52,566 LegacyHintsMigrator.java:91 - Forcing a major compaction of system.hints table
+WARN  [CompactionExecutor:2] 2016-01-13 19:26:05,372 BigTableWriter.java:171 - Writing large partition system/hints:4dbdaab0-f52d-46db-9367-b350567c89b8 (2548854721 bytes)
+INFO  [main] 2016-01-13 19:26:05,528 LegacyHintsMigrator.java:95 - Writing legacy hints to the <span class="code-keyword">new</span> storage
+ERROR [main] 2016-01-13 19:26:08,777 CassandraDaemon.java:690 - Exception encountered during startup
+java.lang.NullPointerException: <span class="code-keyword">null</span>
+	at org.apache.cassandra.serializers.Int32Serializer.deserialize(Int32Serializer.java:31) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.serializers.Int32Serializer.deserialize(Int32Serializer.java:25) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.db.marshal.AbstractType.compose(AbstractType.java:114) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.cql3.UntypedResultSet$Row.getInt(UntypedResultSet.java:287) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.convertLegacyHint(LegacyHintsMigrator.java:197) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrateLegacyHintsInternal(LegacyHintsMigrator.java:175) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrateLegacyHints(LegacyHintsMigrator.java:158) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrateLegacyHints(LegacyHintsMigrator.java:151) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrateLegacyHints(LegacyHintsMigrator.java:142) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.lambda$migrateLegacyHints$201(LegacyHintsMigrator.java:128) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator$$Lambda$140/892745204.accept(Unknown Source) ~[na:na]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[na:1.8.0_45]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrateLegacyHints(LegacyHintsMigrator.java:128) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.hints.LegacyHintsMigrator.migrate(LegacyHintsMigrator.java:96) ~[apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.service.CassandraDaemon.setup(CassandraDaemon.java:294) [apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.service.CassandraDaemon.activate(CassandraDaemon.java:549) [apache-cassandra-3.0.2.jar:3.0.2]
+	at org.apache.cassandra.service.CassandraDaemon.main(CassandraDaemon.java:677) [apache-cassandra-3.0.2.jar:3.0.2]
+INFO  [main] 2016-01-13 19:29:10,940 YamlConfigurationLoader.java:92 - Loading settings from file:/etc/cassandra/cassandra.yaml
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-11078] upgrade_supercolumns_test dtests failing on 2.1
+Description: <p>This tests in this module fail <a href="https://github.com/riptano/cassandra-dtest/blob/18647a3e167f127795e2fe63d73305dddf103716/upgrade_supercolumns_test.py#L213" class="external-link" rel="nofollow">here</a> and <a href="https://github.com/riptano/cassandra-dtest/blob/529cd71ad5ac4c2f28ccb5560ddc068f604c7b28/upgrade_supercolumns_test.py#L106" class="external-link" rel="nofollow">here</a> when a call to <tt>start</tt> with <tt>wait_other_notice=True</tt> times out. It happens consistently on the upgrade path from cassandra-2.1 to 2.2. I haven't seen clear evidence as to whether this is a test failure or a C* bug, so I'll mark it as a test error for the TE team to debug.</p>
+
+<p>I don't have a CassCI link for this failure - the changes to the tests haven't been merged yet.</p>
+
+<p>EDIT: changing the title of this ticket since there are multiple similar failures. The failing tests are</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+upgrade_supercolumns_test.py:TestSCUpgrade.upgrade_with_counters_test failing
+upgrade_supercolumns_test.py:TestSCUpgrade.upgrade_with_index_creation_test
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-11044] query under certain partition key takes much more time than expected 
+Description: <p>In my cluster, all the nodes is under low workload, <br/>
+but query under certain partition key (we found one) takes much more time than expected. </p>
+
+<p>we write &amp; updates about 3 times per row in one day,<br/>
+reads are much more than writes.</p>
+
+<p>HARDWARD:<br/>
+6*nodes(E5-2630, 1*ssd with 5GB data)</p>
+
+<p>TABLE DESCRIBE:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>CREATE TABLE album.user_updates (
+    user_id bigint,
+    time_uuid bigint,
+    key ascii,
+    PRIMARY KEY (user_id, time_uuid)
+) WITH CLUSTERING ORDER BY (time_uuid ASC)
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = '{"keys":"ALL", "rows_per_partition":"NONE"}'
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy'}
+    AND compression = {'sstable_compression': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND dclocal_read_repair_chance = 0.1
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair_chance = 0.0
+    AND speculative_retry = '99.0PERCENTILE';
+</pre>
+</div></div>
+
+<p>QUERYs:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>select * from user_updates where user_id = 1432138730701829 limit 100;
+select count(1) from user_updates where user_id = 1432138730701829;
+</pre>
+</div></div>
+<p>RESULT:  (takes about 3.5 minutes)</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre> count
+-------
+  1058
+
+(1 rows)
+</pre>
+</div></div>
+
+<p>check attachments for the tracing log </p>
+
+Current Element: item
+Title: [CASSANDRA-11063] Unable to compute ceiling for max when histogram overflowed
+Description: <p>Issue <a href="https://issues.apache.org/jira/browse/CASSANDRA-8028" class="external-link" rel="nofollow">https://issues.apache.org/jira/browse/CASSANDRA-8028</a> seems related with error we are getting. But we are getting this with Cassandra 2.1.9 when autocompaction is running it keeps throwing following errors, we are unsure if its a bug or can be resolved, please suggest.</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+WARN  [CompactionExecutor:3] 2016-01-23 13:30:40,907 SSTableWriter.java:240 - Compacting large partition gccatlgsvcks/category_name_dedup:66611300 (138152195 bytes)
+ERROR [CompactionExecutor:1] 2016-01-23 13:30:50,267 CassandraDaemon.java:223 - Exception in thread <span class="code-object">Thread</span>[CompactionExecutor:1,1,main]
+java.lang.IllegalStateException: Unable to compute ceiling <span class="code-keyword">for</span> max when histogram overflowed
+        at org.apache.cassandra.utils.EstimatedHistogram.mean(EstimatedHistogram.java:203) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.io.sstable.metadata.StatsMetadata.getEstimatedDroppableTombstoneRatio(StatsMetadata.java:98) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.io.sstable.SSTableReader.getEstimatedDroppableTombstoneRatio(SSTableReader.java:1987) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.db.compaction.AbstractCompactionStrategy.worthDroppingTombstones(AbstractCompactionStrategy.java:370) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.getNextBackgroundSSTables(SizeTieredCompactionStrategy.java:96) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy.getNextBackgroundTask(SizeTieredCompactionStrategy.java:179) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.db.compaction.WrappingCompactionStrategy.getNextBackgroundTask(WrappingCompactionStrategy.java:84) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at org.apache.cassandra.db.compaction.CompactionManager$BackgroundCompactionCandidate.run(CompactionManager.java:230) ~[apache-cassandra-2.1.9.jar:2.1.9]
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) ~[na:1.7.0_51]
+        at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_51]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) ~[na:1.7.0_51]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_51]
+        at java.lang.<span class="code-object">Thread</span>.run(<span class="code-object">Thread</span>.java:744) [na:1.7.0_51]
+</pre>
+</div></div>
+
+<h3><a name="Additionalinfo%3A"></a>Additional info:</h3>
+
+<p><b>cfstats is running fine for that table...</b></p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+~ $ nodetool cfstats gccatlgsvcks.category_name_dedup
+Keyspace: gccatlgsvcks
+        Read Count: 0
+        Read Latency: NaN ms.
+        Write Count: 0
+        Write Latency: NaN ms.
+        Pending Flushes: 0
+                Table: category_name_dedup
+                SSTable count: 6
+                Space used (live): 836314727
+                Space used (total): 836314727
+                Space used by snapshots (total): 3621519
+                Off heap memory used (total): 6930368
+                SSTable Compression Ratio: 0.03725358753117693
+                <span class="code-object">Number</span> of keys (estimate): 3004
+                Memtable cell count: 0
+                Memtable data size: 0
+                Memtable off heap memory used: 0
+                Memtable <span class="code-keyword">switch</span> count: 0
+                Local read count: 0
+                Local read latency: NaN ms
+                Local write count: 0
+                Local write latency: NaN ms
+                Pending flushes: 0
+                Bloom filter <span class="code-keyword">false</span> positives: 0
+                Bloom filter <span class="code-keyword">false</span> ratio: 0.00000
+                Bloom filter space used: 5240
+                Bloom filter off heap memory used: 5192
+                Index summary off heap memory used: 1200
+                Compression metadata off heap memory used: 6923976
+                Compacted partition minimum bytes: 125
+                Compacted partition maximum bytes: 30753941057
+                Compacted partition mean bytes: 8352388
+                Average live cells per slice (last five minutes): 0.0
+                Maximum live cells per slice (last five minutes): 0.0
+                Average tombstones per slice (last five minutes): 0.0
+                Maximum tombstones per slice (last five minutes): 0.0
+
+</pre>
+</div></div>
+
+<p><b>cfhistograms is also running fine...</b></p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+~ $ nodetool cfhistograms gccatlgsvcks category_name_dedup
+gccatlgsvcks/category_name_dedup histograms
+Percentile  SSTables     Write Latency      Read Latency    Partition Size        Cell Count
+                              (micros)          (micros)           (bytes)
+50%             0.00              0.00              0.00              1109                20
+75%             0.00              0.00              0.00              2299                42
+95%             0.00              0.00              0.00             11864               215
+98%             0.00              0.00              0.00             35425               642
+99%             0.00              0.00              0.00             51012               924
+Min             0.00              0.00              0.00               125                 4
+Max             0.00              0.00              0.00       30753941057         268650950
+</pre>
+</div></div>
+
+
+Current Element: item
+Title: [CASSANDRA-11057] move_single_node_localhost_test is failing
+Description: <p><tt>pushed_notifications_test.TestPushedNotifications.move_single_node_localhost_test</tt> is failing across all tested versions. Example failure is <a href="http://cassci.datastax.com/job/cassandra-2.1_novnode_dtest/194/testReport/pushed_notifications_test/TestPushedNotifications/move_single_node_localhost_test/" class="external-link" rel="nofollow">here</a>. </p>
+
+<p>We need to debug this failure, as it is entirely likely it is a test issue and not a bug.</p>
+
+Current Element: item
+Title: [CASSANDRA-11055] C*2.1 cqlsh DESCRIBE KEYSPACE ( or TABLE ) returns 'NoneType' object has no attribute 'replace'
+Description: <p>C* 2.1 cqlsh DESCRIBE KEYSPACE ( or TABLE ) returns:</p>
+
+<p> 'NoneType' object has no attribute 'replace' </p>
+
+<p>for thrift CF's originally created in C* 1.2.</p>
+
+<p>Repro:</p>
+
+<p>1. Create cf in cassandra-cli on C* 1.2.x  (1.2.9 was used here)</p>
+
+<p><span class="error">&#91;default@ks1&#93;</span> CREATE COLUMN FAMILY t1<br/>
+...	WITH column_type='Standard'<br/>
+...	AND comparator='CompositeType(org.apache.cassandra.db.marshal.UTF8Type,org.apache.cassandra.db.marshal.UTF8Type)'<br/>
+...	AND default_validation_class='UTF8Type'<br/>
+...	AND key_validation_class='UTF8Type'<br/>
+...	AND read_repair_chance=0.1<br/>
+...	AND dclocal_read_repair_chance=0.0<br/>
+...	AND gc_grace=864000<br/>
+...	AND min_compaction_threshold=4<br/>
+...	AND max_compaction_threshold=32<br/>
+...	AND replicate_on_write=true<br/>
+...	AND compaction_strategy='LeveledCompactionStrategy' AND compaction_strategy_options=</p>
+{sstable_size_in_mb: 32}
+<p>...	AND caching='KEYS_ONLY'<br/>
+...	AND compression_options=</p>
+{sstable_compression:SnappyCompressor, chunk_length_kb:64}
+<p>;</p>
+
+<p>qlsh&gt; describe keyspace ks1;</p>
+
+<p>CREATE KEYSPACE ks1 WITH replication = </p>
+{
+  'class': 'NetworkTopologyStrategy',
+  'datacenter1': '1'
+}
+<p>;</p>
+
+<p>USE ks1;</p>
+
+<p>CREATE TABLE t1 (<br/>
+  key text,<br/>
+  column1 text,<br/>
+  column2 text,<br/>
+  value text,<br/>
+  PRIMARY KEY (key, column1, column2)<br/>
+) WITH COMPACT STORAGE AND<br/>
+  bloom_filter_fp_chance=0.100000 AND<br/>
+  caching='KEYS_ONLY' AND<br/>
+  comment='' AND<br/>
+  dclocal_read_repair_chance=0.000000 AND<br/>
+  gc_grace_seconds=864000 AND<br/>
+  read_repair_chance=0.100000 AND<br/>
+  replicate_on_write='true' AND<br/>
+  populate_io_cache_on_flush='false' AND<br/>
+  compaction=</p>
+{'sstable_size_in_mb': '32', 'class': 'LeveledCompactionStrategy'}
+<p> AND<br/>
+  compression=</p>
+{'chunk_length_kb': '64', 'sstable_compression': 'SnappyCompressor'}
+<p>;</p>
+
+
+<p>cqlsh&gt; select keyspace_name, columnfamily_name,column_aliases,key_aliases from system.schema_columnfamilies where keyspace_name= 'ks1';</p>
+
+<p> keyspace_name | columnfamily_name | column_aliases | key_aliases<br/>
+--------------<del><ins></del>-----------------<del></ins></del>--------------<del>+</del>------------<br/>
+           ks1 |                t1 |             [] |          []</p>
+
+
+<p>2/ Upgrade -&gt; C* 2.0.9 -&gt; nodetool upgradesstables -a</p>
+
+<p>At this stage , DESCRIBE in cqlsh is working</p>
+
+<p>3/ Upgrade -&gt; C* 2.1.12 -&gt; nodetool upgradesstables -a</p>
+
+<p>DESCRIBE now fails:</p>
+
+<p>cqlsh&gt; describe table ks1.t1;<br/>
+'NoneType' object has no attribute 'replace'</p>
+
+<p>cqlsh&gt; describe keyspace ks1;<br/>
+'NoneType' object has no attribute 'replace'</p>
+
+
+<p>You can workaround by manually updating system.schema_columnfamilies</p>
+
+<p> UPDATE system.schema_columnfamilies SET column_aliases ='<span class="error">&#91;&quot;column1&quot;,&quot;column2&quot;&#93;</span>' WHERE keyspace_name = 'ks1' AND columnfamily_name = 't1';</p>
+
+<p>Once you exit and restart cqlsh, DESCRIBE is not working as per C* 1.2</p>
+
+<p>cqlsh&gt; describe keyspace ks1;</p>
+
+<p>CREATE KEYSPACE ks1 WITH replication = </p>
+{'class': 'NetworkTopologyStrategy', 'datacenter1': '1'}
+<p>  AND durable_writes = true;</p>
+
+<p>CREATE TABLE ks1.t1 (<br/>
+    key text,<br/>
+    column1 text,<br/>
+    column2 text,<br/>
+    value text,<br/>
+    PRIMARY KEY (key, column1, column2)<br/>
+) WITH COMPACT STORAGE<br/>
+    AND CLUSTERING ORDER BY (column1 ASC, column2 ASC)<br/>
+    AND caching = '</p>
+{"keys":"ALL", "rows_per_partition":"NONE"}
+<p>'<br/>
+    AND comment = ''<br/>
+    AND compaction = </p>
+{'sstable_size_in_mb': '32', 'class': 'org.apache.cassandra.db.compaction.LeveledCompactionStrategy'}
+<p>    AND compression = </p>
+{'chunk_length_kb': '64', 'sstable_compression': 'org.apache.cassandra.io.compress.SnappyCompressor'}
+<p>    AND dclocal_read_repair_chance = 0.0<br/>
+    AND default_time_to_live = 0<br/>
+    AND gc_grace_seconds = 864000<br/>
+    AND max_index_interval = 2048<br/>
+    AND memtable_flush_period_in_ms = 0<br/>
+    AND min_index_interval = 128<br/>
+    AND read_repair_chance = 0.1<br/>
+    AND speculative_retry = '99.0PERCENTILE';</p>
+
+
+
+
+Current Element: item
+Title: [CASSANDRA-11000] Mixing LWT and non-LWT operations can result in an LWT operation being acknowledged but not applied
+Description: <p>When mixing light-weight transaction (LWT, a.k.a. compare-and-set, conditional update) operations with regular operations, it can happen that an LWT operation is acknowledged (applied = True), even though the update has not been applied and a SELECT operation still returns the old data.</p>
+
+<p>For example, consider the following table:</p>
+
+<p>CREATE TABLE test (<br/>
+    pk text,<br/>
+    ck text,<br/>
+    v text,<br/>
+    PRIMARY KEY (pk, ck)<br/>
+);</p>
+
+<p>We start with an empty table and insert data using a regular (non-LWT) operation:</p>
+
+<p>INSERT INTO test (pk, ck, v) VALUES ('foo', 'bar', '123');</p>
+
+<p>A following SELECT statement returns the data as expected. Now we do a conditional update (LWT):</p>
+
+<p>UPDATE test SET v = '456' WHERE pk = 'foo' AND ck = 'bar' IF v = '123';</p>
+
+<p>As expected, the update is applied and a following SELECT statement shows the updated value.</p>
+
+<p>Now we do the same but use a time stamp that is slightly in the future (e.g. a few seconds) for the INSERT statement (obviously $time$ needs to be replaced by a time stamp that is slightly ahead of the system clock).</p>
+
+<p>INSERT INTO test (pk, ck, v) VALUES ('foo', 'bar', '123') USING TIMESTAMP $time$;</p>
+
+<p>Now, running the same UPDATE statement still report success (applied = True). However, a subsequent SELECT yields the old value ('123') instead of the updated value ('456'). Inspecting the time stamp of the value indicates that it has not been replaced (the value from the original INSERT is still in place).</p>
+
+<p>This behavior is exhibited in an single-node cluster running Cassandra 2.1.11, 2.2.4, and 3.0.1.</p>
+
+<p>Testing this for a multi-node cluster is a bit more tricky, so I only tested it with Cassandra 2.2.4. Here, I made one of the nodes lack behind in time for a few seconds (using libfaketime). I used a replication factor of three for the test keyspace. In this case, the behavior can be demonstrated even without using an explicitly specified time stamp. Running</p>
+
+<p>INSERT INTO test (pk, ck, v) VALUES ('foo', 'bar', '123');</p>
+
+<p>on a node with the regular clock followed by</p>
+
+<p>UPDATE test SET v = '456' WHERE pk = 'foo' AND ck = 'bar' IF v = '123';</p>
+
+<p>on the node lagging behind results in the UPDATE to report success, but the old value still being used.</p>
+
+<p>Interestingly, everything works as expected if using LWT operations consistently: When running</p>
+
+<p>UPDATE test SET v = '456' WHERE pk = 'foo' AND ck = 'bar' IF v = '123';<br/>
+UPDATE test SET v = '123' WHERE pk = 'foo' AND ck = 'bar' IF v = '456';</p>
+
+<p>in an alternating fashion on two nodes (one with a "normal" clock, one with the clock lagging behind), the updates are applied as expected. When checking the time stamps ("SELECT WRITETIME(v) FROM test;"), one can see that the time stamp is increased by just a single tick when the statement is executed on the node lagging behind.</p>
+
+<p>I think that this problem is strongly related to (or maybe even the same as) the one described in <a href="https://issues.apache.org/jira/browse/CASSANDRA-7801" title="A successful INSERT with CAS does not always store data in the DB after a DELETE" class="issue-link" data-issue-key="CASSANDRA-7801"><del>CASSANDRA-7801</del></a>, even though <a href="https://issues.apache.org/jira/browse/CASSANDRA-7801" title="A successful INSERT with CAS does not always store data in the DB after a DELETE" class="issue-link" data-issue-key="CASSANDRA-7801"><del>CASSANDRA-7801</del></a> was mainly concerned about a single-node cluster. However, the fact that this problem still exists in current versions of Cassandra makes me suspect that either it is a different problem or the original problem was not fixed completely with the patch from <a href="https://issues.apache.org/jira/browse/CASSANDRA-7801" title="A successful INSERT with CAS does not always store data in the DB after a DELETE" class="issue-link" data-issue-key="CASSANDRA-7801"><del>CASSANDRA-7801</del></a>.</p>
+
+<p>I found <a href="https://issues.apache.org/jira/browse/CASSANDRA-9655" title="Consider reverting CASSANDRA-7801" class="issue-link" data-issue-key="CASSANDRA-9655">CASSANDRA-9655</a> which suggest removing the changes introduced with <a href="https://issues.apache.org/jira/browse/CASSANDRA-7801" title="A successful INSERT with CAS does not always store data in the DB after a DELETE" class="issue-link" data-issue-key="CASSANDRA-7801"><del>CASSANDRA-7801</del></a> because they can be problematic under certain circumstances, but I am not sure whether this is the right place to discuss the issue I am experiencing. If you feel so, feel free to close this issue and update the description of <a href="https://issues.apache.org/jira/browse/CASSANDRA-9655" title="Consider reverting CASSANDRA-7801" class="issue-link" data-issue-key="CASSANDRA-9655">CASSANDRA-9655</a>.</p>
+
+<p>In my opinion, the best way to fix this problem would be ensuring that a write that is part of a LWT always uses a time stamp that is at least one tick greater than the time stamp of the existing data. As the existing data has to be read for checking the condition anyway, I do not think that this would cause an additional overhead. If this is not possible, I suggest to look into whether we can somehow detect such a situation and at least report failure (applied = False) on the LWT instead of reporting success.</p>
+
+<p>The latter solution would at least fix those cases where code checks the success of a LWT before performing any further actions (e.g. because the LWT is used to take some kind of lock). Currently, the code will assume that the operation was successful (and thus - staying in the example - it owns the lock), while other processes running in parallel will see a different state. It is my understanding that LWTs were designed to avoid exactly this situation, but at the moment the assumptions most users will make about LWTs do not always hold.</p>
+
+<p>Until this issue is solved, I suggest at least updating the CQL documentation and clearly stating that LWTs / conditional updates are not safe if data has been previously INSERTed / UPDATEd / DELETEd using non-LWT operations and there is a clock skew or time stamps that are in the future have been supplied explicitly. This should at least save some users from making wrong assumptions about LWTs and not realizing it until their application fails in an unsafe way.</p>
+
+Current Element: item
+Title: [CASSANDRA-10988] ClassCastException in SelectStatement
+Description: <p>After we've upgraded our cluster to version 2.1.11, we started getting the bellow exceptions for some of our queries. Issue seems to be very similar to <a href="https://issues.apache.org/jira/browse/CASSANDRA-7284" title="ClassCastException in HintedHandoffManager.pagingFinished" class="issue-link" data-issue-key="CASSANDRA-7284"><del>CASSANDRA-7284</del></a>.</p>
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+java.lang.ClassCastException: org.apache.cassandra.db.composites.Composites$EmptyComposite cannot be <span class="code-keyword">cast</span> to org.apache.cassandra.db.composites.CellName
+        at org.apache.cassandra.db.composites.AbstractCellNameType.cellFromByteBuffer(AbstractCellNameType.java:188) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.db.composites.AbstractSimpleCellNameType.makeCellName(AbstractSimpleCellNameType.java:125) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.db.composites.AbstractCellNameType.makeCellName(AbstractCellNameType.java:254) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.makeExclusiveSliceBound(SelectStatement.java:1197) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.applySliceRestriction(SelectStatement.java:1205) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.processColumnFamily(SelectStatement.java:1283) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.process(SelectStatement.java:1250) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.processResults(SelectStatement.java:299) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.execute(SelectStatement.java:276) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.execute(SelectStatement.java:224) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.statements.SelectStatement.execute(SelectStatement.java:67) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.QueryProcessor.processStatement(QueryProcessor.java:238) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.cql3.QueryProcessor.processPrepared(QueryProcessor.java:493) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.transport.messages.ExecuteMessage.execute(ExecuteMessage.java:138) ~[apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.transport.Message$Dispatcher.channelRead0(Message.java:439) [apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.transport.Message$Dispatcher.channelRead0(Message.java:335) [apache-cassandra-2.1.11.jar:2.1.11]
+        at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [netty-all-4.0.23.Final.jar:4.0.23.Final]
+        at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:333) [netty-all-4.0.23.Final.jar:4.0.23.Final]
+        at io.netty.channel.AbstractChannelHandlerContext.access$700(AbstractChannelHandlerContext.java:32) [netty-all-4.0.23.Final.jar:4.0.23.Final]
+        at io.netty.channel.AbstractChannelHandlerContext$8.run(AbstractChannelHandlerContext.java:324) [netty-all-4.0.23.Final.jar:4.0.23.Final]
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_66]
+        at org.apache.cassandra.concurrent.AbstractTracingAwareExecutorService$FutureTask.run(AbstractTracingAwareExecutorService.java:164) [apache-cassandra-2.1.11.jar:2.1.11]
+        at org.apache.cassandra.concurrent.SEPWorker.run(SEPWorker.java:105) [apache-cassandra-2.1.11.jar:2.1.11]
+        at java.lang.<span class="code-object">Thread</span>.run(<span class="code-object">Thread</span>.java:745) [na:1.8.0_66]
+</pre>
+</div></div>
+
+Current Element: item
+Title: [CASSANDRA-10985] OOM during bulk read(slice query) operation
+Description: <p>The thread java.lang.Thread @ 0x55000a4f0 Thrift:6 keeps local variables with total size 16,214,953,728 (98.23%) bytes.</p>
+
+<p>The memory is accumulated in one instance of "java.lang.Thread" loaded by "&lt;system class loader&gt;".<br/>
+The stacktrace of this Thread is available. See stacktrace.</p>
+
+
+
+<p>Keywords<br/>
+java.lang.Thread<br/>
+--------------------------------------------------------------------------------------<br/>
+Trace: </p>
+
+<p>Thrift:6<br/>
+  at java.lang.OutOfMemoryError.&lt;init&gt;()V (OutOfMemoryError.java:48)<br/>
+  at org.apache.cassandra.utils.ByteBufferUtil.read(Ljava/io/DataInput;I)Ljava/nio/ByteBuffer; (ByteBufferUtil.java:401)<br/>
+  at org.apache.cassandra.utils.ByteBufferUtil.readWithVIntLength(Lorg/apache/cassandra/io/util/DataInputPlus;)Ljava/nio/ByteBuffer; (ByteBufferUtil.java:339)<br/>
+  at org.apache.cassandra.db.marshal.AbstractType.readValue(Lorg/apache/cassandra/io/util/DataInputPlus;)Ljava/nio/ByteBuffer; (AbstractType.java:391)<br/>
+  at org.apache.cassandra.db.rows.BufferCell$Serializer.deserialize(Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/LivenessInfo;Lorg/apache/cassandra/config/ColumnDefinition;Lorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/db/rows/SerializationHelper;)Lorg/apache/cassandra/db/rows/Cell; (BufferCell.java:298)<br/>
+  at org.apache.cassandra.db.rows.UnfilteredSerializer.readSimpleColumn(Lorg/apache/cassandra/config/ColumnDefinition;Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/db/rows/SerializationHelper;Lorg/apache/cassandra/db/rows/Row$Builder;Lorg/apache/cassandra/db/LivenessInfo;)V (UnfilteredSerializer.java:453)<br/>
+  at org.apache.cassandra.db.rows.UnfilteredSerializer.deserializeRowBody(Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/db/rows/SerializationHelper;IILorg/apache/cassandra/db/rows/Row$Builder;)Lorg/apache/cassandra/db/rows/Row; (UnfilteredSerializer.java:431)<br/>
+  at org.apache.cassandra.db.rows.UnfilteredSerializer.deserialize(Lorg/apache/cassandra/io/util/DataInputPlus;Lorg/apache/cassandra/db/SerializationHeader;Lorg/apache/cassandra/db/rows/SerializationHelper;Lorg/apache/cassandra/db/rows/Row$Builder;)Lorg/apache/cassandra/db/rows/Unfiltered; (UnfilteredSerializer.java:360)<br/>
+  at org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer$1.computeNext()Lorg/apache/cassandra/db/rows/Unfiltered; (UnfilteredRowIteratorSerializer.java:217)<br/>
+  at org.apache.cassandra.db.rows.UnfilteredRowIteratorSerializer$1.computeNext()Ljava/lang/Object; (UnfilteredRowIteratorSerializer.java:210)<br/>
+  at org.apache.cassandra.utils.AbstractIterator.hasNext()Z (AbstractIterator.java:47)<br/>
+  at org.apache.cassandra.db.transform.BaseRows.hasNext()Z (BaseRows.java:108)<br/>
+  at org.apache.cassandra.db.LegacyLayout$3.computeNext()Lorg/apache/cassandra/db/LegacyLayout$LegacyCell; (LegacyLayout.java:658)<br/>
+  at org.apache.cassandra.db.LegacyLayout$3.computeNext()Ljava/lang/Object; (LegacyLayout.java:640)<br/>
+  at org.apache.cassandra.utils.AbstractIterator.hasNext()Z (AbstractIterator.java:47)<br/>
+  at org.apache.cassandra.thrift.CassandraServer.thriftifyColumns(Lorg/apache/cassandra/config/CFMetaData;Ljava/util/Iterator;)Ljava/util/List; (CassandraServer.java:112)<br/>
+  at org.apache.cassandra.thrift.CassandraServer.thriftifyPartition(Lorg/apache/cassandra/db/rows/RowIterator;ZZI)Ljava/util/List; (CassandraServer.java:250)<br/>
+  at org.apache.cassandra.thrift.CassandraServer.getSlice(Ljava/util/List;ZILorg/apache/cassandra/db/ConsistencyLevel;Lorg/apache/cassandra/service/ClientState;)Ljava/util/Map; (CassandraServer.java:270)<br/>
+  at org.apache.cassandra.thrift.CassandraServer.multigetSliceInternal(Ljava/lang/String;Ljava/util/List;Lorg/apache/cassandra/thrift/ColumnParent;ILorg/apache/cassandra/thrift/SlicePredicate;Lorg/apache/cassandra/thrift/ConsistencyLevel;Lorg/apache/cassandra/service/ClientState;)Ljava/util/Map; (CassandraServer.java:566)<br/>
+  at org.apache.cassandra.thrift.CassandraServer.multiget_slice(Ljava/util/List;Lorg/apache/cassandra/thrift/ColumnParent;Lorg/apache/cassandra/thrift/SlicePredicate;Lorg/apache/cassandra/thrift/ConsistencyLevel;)Ljava/util/Map; (CassandraServer.java:348)<br/>
+  at org.apache.cassandra.thrift.Cassandra$Processor$multiget_slice.getResult(Lorg/apache/cassandra/thrift/Cassandra$Iface;Lorg/apache/cassandra/thrift/Cassandra$multiget_slice_args;)Lorg/apache/cassandra/thrift/Cassandra$multiget_slice_result; (Cassandra.java:3716)<br/>
+  at org.apache.cassandra.thrift.Cassandra$Processor$multiget_slice.getResult(Ljava/lang/Object;Lorg/apache/thrift/TBase;)Lorg/apache/thrift/TBase; (Cassandra.java:3700)<br/>
+  at org.apache.thrift.ProcessFunction.process(ILorg/apache/thrift/protocol/TProtocol;Lorg/apache/thrift/protocol/TProtocol;Ljava/lang/Object;)V (ProcessFunction.java:39)<br/>
+  at org.apache.thrift.TBaseProcessor.process(Lorg/apache/thrift/protocol/TProtocol;Lorg/apache/thrift/protocol/TProtocol;)Z (TBaseProcessor.java:39)<br/>
+  at org.apache.cassandra.thrift.CustomTThreadPoolServer$WorkerProcess.run()V (CustomTThreadPoolServer.java:204)<br/>
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V (ThreadPoolExecutor.java:1142)<br/>
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run()V (ThreadPoolExecutor.java:617)<br/>
+  at java.lang.Thread.run()V (Thread.java:745)</p>
+
+<p>------------------------------------------------------------------------------</p>
+
+
+
+
+Current Element: item
+Title: [CASSANDRA-10982] Put gc.log in -Dcassandra.logdir location by default
+Description: <p><a href="https://issues.apache.org/jira/browse/CASSANDRA-10140" title="Enable GC logging by default" class="issue-link" data-issue-key="CASSANDRA-10140"><del>CASSANDRA-10140</del></a> turned on gc.log by default, and set it's location to CASSANDRA_HOME/logs. It would be much better UX if when -Dcassandra.logdir was set, that it was used instead. This way users don't have to separately configure gc.log from the other log files.</p>
+
+<p>Additionally, I don't think 10140 made it to trunk, as grepping for `loggc` there shows me nothing in cassandra-env.sh as of 31f67c289.</p>
+
+Current Element: item
+Title: [CASSANDRA-9530] SSTable corruption can trigger OOM
+Description: <p>If a sstable is corrupted so that the length of a given is bogus, we'll still happily try to allocate a buffer of that bogus size to read the value, which can easily lead to an OOM.</p>
+
+<p>We should probably protect against this. In practice, a given value can be so big since it's limited by the protocol frame size in the first place. Maybe we could add a max_value_size_in_mb setting and we'd considered a sstable corrupted if it was containing a value bigger than that.</p>
+
+<p>I'll note that this ticket would be a good occasion to improve <tt>BlacklistingCompactionsTest</tt>. Typically, it currently generate empty values which makes it pretty much impossible to get the problem described here. And as described in <a href="https://issues.apache.org/jira/browse/CASSANDRA-9478" title="SSTables are not always properly marked suspected" class="issue-link" data-issue-key="CASSANDRA-9478"><del>CASSANDRA-9478</del></a>, it also doesn't test properly for thing like early opening of compaction results. We could try to randomize as much of the parameters of this test as possible to make it more likely to catch any type of corruption that could happen.</p>
+
+Current Element: item
+Title: [CASSANDRA-9434] If a node loses schema_columns SSTables it could delete all secondary indexes from the schema
+Description: <p>It is possible that a single bad node can delete all secondary indexes if it restarts and cannot read its schema_columns SSTables. Here's a reproduction:</p>
+
+<ul>
+	<li>Create a 2 node cluster (we saw it on 2.0.11)</li>
+	<li>Create the schema:</li>
+</ul>
+
+
+<div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">
+create keyspace myks with replication = {'class':'SimpleStrategy', 'replication_factor':1};
+use myks;
+create table mytable (a text, b text, c text, PRIMARY KEY (a, b) );
+create index myindex on mytable(b);
+</pre>
+</div></div>
+
+<p>NB index must be on clustering column to repro</p>
+
+<ul>
+	<li>Kill one node</li>
+	<li>Wipe its commitlog and system/schema_columns sstables.</li>
+	<li>Start it again</li>
+	<li>Run on this node</li>
+</ul>
+
+
+<p>select index_name from system.schema_columns where keyspace_name = 'myks' and columnfamily_name = 'mytable' and column_name = 'b';</p>
+
+<p>and you'll see the index is null.</p>
+<ul>
+	<li>Run 'describe schema' on the other node. Sometimes it will not show the index, but you might need to bounce for it to disappear.</li>
+</ul>
+
+
+<p>I think the culprit is SystemKeyspace.copyAllAliasesToColumnsProper.</p>
+
+Current Element: item
+Title: [CASSANDRA-9418] Fix dtests on 2.2 branch on Windows
+Description: <p>There's a variety of infrastructural failures within dtest w/regards to windows that are causing tests to fail and those failures to cascade.</p>
+
+<p>Error: failure to delete commit log after a test / ccm cluster is stopped:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Traceback (most recent call last):
+  File "C:\src\cassandra-dtest\dtest.py", line 452, in tearDown
+    self._cleanup_cluster()
+  File "C:\src\cassandra-dtest\dtest.py", line 172, in _cleanup_cluster
+    self.cluster.remove()
+  File "build\bdist.win-amd64\egg\ccmlib\cluster.py", line 212, in remove
+    shutil.rmtree(self.get_path())
+  File "C:\Python27\lib\shutil.py", line 247, in rmtree
+    rmtree(fullname, ignore_errors, onerror)
+  File "C:\Python27\lib\shutil.py", line 247, in rmtree
+    rmtree(fullname, ignore_errors, onerror)
+  File "C:\Python27\lib\shutil.py", line 252, in rmtree
+    onerror(os.remove, fullname, sys.exc_info())
+  File "C:\Python27\lib\shutil.py", line 250, in rmtree
+    os.remove(fullname)
+WindowsError: [Error 5] Access is denied: 'c:\\temp\\dtest-4rxq2i\\test\\node1\\commitlogs\\CommitLog-5-1431969131917.log'
+</pre>
+</div></div>
+
+<p>Cascading error: implication is that tests aren't shutting down correctly and subsequent tests cannot start:</p>
+<div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>06:00:20 ERROR: test_incr_decr_super_remove (thrift_tests.TestMutations)
+06:00:20 ----------------------------------------------------------------------
+06:00:20 Traceback (most recent call last):
+06:00:20   File "D:\jenkins\workspace\trunk_dtest_win32\cassandra-dtest\thrift_tests.py", line 55, in setUp
+06:00:20     cluster.start()
+06:00:20   File "build\bdist.win-amd64\egg\ccmlib\cluster.py", line 249, in start
+06:00:20     p = node.start(update_pid=False, jvm_args=jvm_args, profile_options=profile_options)
+06:00:20   File "build\bdist.win-amd64\egg\ccmlib\node.py", line 457, in start
+06:00:20     common.check_socket_available(itf)
+06:00:20   File "build\bdist.win-amd64\egg\ccmlib\common.py", line 341, in check_socket_available
+06:00:20     raise UnavailableSocketError("Inet address %s:%s is not available: %s" % (addr, port, msg))
+06:00:20 UnavailableSocketError: Inet address 127.0.0.1:9042 is not available: [Errno 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+06:00:20 -------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+06:00:20 dtest: DEBUG: removing ccm cluster test at: d:\temp\dtest-a5iny5
+06:00:20 dtest: DEBUG: cluster ccm directory: d:\temp\dtest-dalzcy
+06:00:20 --------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------
+</pre>
+</div></div>
+
+<p>I've also seen (and am debugging) an error where a node just fails to start via ccm.</p>
+
+<p>I'll update this ticket with PR's to dtest or other observations of interest.</p>

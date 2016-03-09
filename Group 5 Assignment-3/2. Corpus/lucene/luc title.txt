@@ -1,0 +1,304 @@
+Root Element :rss
+
+------------------------------------------
+
+
+Current Element: item
+Title: [LUCENE-6110] When call ' IndexWriter.getReader(IndexWriter) '  BLOCKED..
+
+Current Element: item
+Title: [LUCENE-6572] Highlighter depends on analyzers-common
+
+Current Element: item
+Title: [LUCENE-6247] artifacts are half a gigabyte
+
+Current Element: item
+Title: [LUCENE-5510] Docvalues need to be indexablefield (not storable)
+
+Current Element: item
+Title: [LUCENE-6662] Resource Leaks
+
+Current Element: item
+Title: [LUCENE-5741] IndexWriter.tryDeleteDocument does not work
+
+Current Element: item
+Title: [LUCENE-4787] The QueryScorer.getMaxWeight method is not found.
+
+Current Element: item
+Title: [LUCENE-4730] SmartChineseAnalyzer got wrong matched offset
+
+Current Element: item
+Title: [LUCENE-4200] ArrayIndexOutOfBoundsException in lucene.index.SegmentTermDocs.read
+
+Current Element: item
+Title: [LUCENE-3782] An incomplete fix for the NPE bugs in Directory.java
+
+Current Element: item
+Title: [LUCENE-3779] An incomplete fix for the NPE bugs in MultipleTermPositions.java
+
+Current Element: item
+Title: [LUCENE-3780] An incomplete fix for the NPE bugs in ParallelReader.java
+
+Current Element: item
+Title: [LUCENE-3673] NativeFSLockFactory Race Condition
+
+Current Element: item
+Title: [LUCENE-6390] WeightedSpansTermExtractor has a broken IndexReader
+
+Current Element: item
+Title: [LUCENE-6079] PatternReplaceCharFilter crashes JVM with OutOfMemoryError
+
+Current Element: item
+Title: [LUCENE-6037] PendingTerm cannot be cast to PendingBlock
+
+Current Element: item
+Title: [LUCENE-5931] DirectoryReader.openIfChanged(oldReader, commit) incorrectly assumes given commit point has deletes/field updates
+
+Current Element: item
+Title: [LUCENE-5814] JVM crash When Run Lucene
+
+Current Element: item
+Title: [LUCENE-5195] 2013-08-30 02:00:01,062 [pool-24-thread-1] ERROR [org.apache.solr.handler.ReplicationHandler] - SnapPull failed 
+
+Current Element: item
+Title: [LUCENE-3036] TestFSTs.testRealTerms is a terrible unit test
+
+Current Element: item
+Title: [LUCENE-3008] NumberFormatException: For input string: "gen.before_restore_2011-03-21_07.15.36.372112"
+
+Current Element: item
+Title: [LUCENE-2905] Sep codec writes insane amounts of skip data
+
+Current Element: item
+Title: [LUCENE-2823] contrib/demo's tests leave threads running
+
+Current Element: item
+Title: [LUCENE-2827] JaroWinklerDistance returns 0f when s1.length()=s2.length()=0
+
+Current Element: item
+Title: [LUCENE-2806] ArrayIndexOutOfBoundsException thrown from TermScorer.score while doing a regular index search.
+
+Current Element: item
+Title: [LUCENE-2801] getOffsetGap should not be called for non-anaylyzed fields
+
+Current Element: item
+Title: [LUCENE-2800] Search Index Generation fails
+
+Current Element: item
+Title: [LUCENE-3153] Adding field w/ norms should fail if same field was added w/o norms already
+
+Current Element: item
+Title: [LUCENE-3088] inconsistency of tokenstream.end() with OffsetLimitTokenFilter and LimitTokenCountFilter
+
+Current Element: item
+Title: [LUCENE-3089] CachingTokenFilter can cause close() to be called twice.
+
+Current Element: item
+Title: [LUCENE-3055] LUCENE-2372, LUCENE-2389 made it impossible to subclass core analyzers
+
+Current Element: item
+Title: [LUCENE-3085] MultiBulkPostingsEnum is buggy
+
+Current Element: item
+Title: [LUCENE-2942] toString() methods on term/queries/etc are wrong: assume utf-8 encoded bytes.
+
+Current Element: item
+Title: [LUCENE-2987] QueryParser throwing null pointer exception if input is invalid
+
+Current Element: item
+Title: [LUCENE-2775] Sorting of search results can fail
+
+Current Element: item
+Title: [LUCENE-2673] CJKAnalyzer not matching mutlibyte character followed by non-multibyte character
+
+Current Element: item
+Title: [LUCENE-2666] ArrayIndexOutOfBoundsException when iterating over TermDocs
+
+Current Element: item
+Title: [LUCENE-2698] Intermittent exc in TestIndexWriter.testAddDocumentOnDiskFull
+
+Current Element: item
+Title: [LUCENE-2684] it's not possible to access sub-query's freq information if BooleanScorer is use
+
+Current Element: item
+Title: [LUCENE-2605] queryparser parses on whitespace
+
+Current Element: item
+Title: [LUCENE-2607] IndexWriter.isLocked() fails on a read-only directory
+
+Current Element: item
+Title: [LUCENE-2557] FuzzyQuery - fuzzy terms and misspellings are ranked higher than exact matches
+
+Current Element: item
+Title: [LUCENE-2585] DirectoryReader.isCurrent might fail to see the segments file during concurrent index changes
+
+Current Element: item
+Title: [LUCENE-2527] FieldCache.getTermsIndex should cache fasterButMoreRAM=true|false to the same cache key
+
+Current Element: item
+Title: [LUCENE-2525] make MultiPhraseQuery's UnionDocsAndPositionsEnum public
+
+Current Element: item
+Title: [LUCENE-2520] Unsafe synchronization in CachingWrapperFilterHelper
+
+Current Element: item
+Title: [LUCENE-2145] TokenStream.close() is called multiple times per TokenStream instance
+
+Current Element: item
+Title: [LUCENE-2172] lucli in contrib lacking run.sh
+
+Current Element: item
+Title: [LUCENE-2154] Need a clean way for Dir/MultiReader to "merge" the AttributeSources of the sub-readers
+
+Current Element: item
+Title: [LUCENE-1964] InstantiatedIndex : TermFreqVector is missing
+
+Current Element: item
+Title: [LUCENE-2469] inconsistency in SolrParams.get()
+
+Current Element: item
+Title: [LUCENE-2438] BytesRef improvements
+
+Current Element: item
+Title: [LUCENE-2348] DuplicateFilter incorrectly handles multiple calls to getDocIdSet for segment readers
+
+Current Element: item
+Title: [LUCENE-2280] IndexWriter.optimize() throws NullPointerException
+
+Current Element: item
+Title: [LUCENE-6883] Getting exception _t.si (No such file or directory)
+
+Current Element: item
+Title: [LUCENE-6882] java.lang.NoClassDefFoundError: org/apache/lucene/codecs/lucene54/Lucene54Codec
+
+Current Element: item
+Title: [LUCENE-6876] QueryNodeParseException is thrown without proper Error information
+
+Current Element: item
+Title: [LUCENE-6865] BooleanQuery2ModifierNodeProcessor breaks the query node hierarchy
+
+Current Element: item
+Title: [LUCENE-6853] Boolean perceptron classifier is too sensitive to threshold
+
+Current Element: item
+Title: [LUCENE-6841] LZ4 compression using too much CPU time
+
+Current Element: item
+Title: [LUCENE-6832] SynonymFilter behaves not as expected with "ignoreCase=true"
+
+Current Element: item
+Title: [LUCENE-6758] Adding a SHOULD clause to a BQ over an empty field clears the score when using DefaultSimilarity
+
+Current Element: item
+Title: [LUCENE-6750] TestMergeSchedulerExternal failure
+
+Current Element: item
+Title: [LUCENE-6749] TestPerfTasksLogic failure
+
+Current Element: item
+Title: [LUCENE-6753] TestFieldSkew test failure
+
+Current Element: item
+Title: [LUCENE-6751] TestSimlarity2.testNoFieldSkew() failure
+
+Current Element: item
+Title: [LUCENE-6744] equals methods should compare classes directly, not use instanceof
+
+Current Element: item
+Title: [LUCENE-6769] Various codec formats' testRandomExceptions() are failing with unexpected FileNotFoundException
+
+Current Element: item
+Title: [LUCENE-6943] Jvm Crashes occassionaly with Lucene 4.6.1
+
+Current Element: item
+Title: [LUCENE-6941] TestStressIndexing2.testMultiConfig() failure: all instances of a given field name must have the same term vectors settings
+
+Current Element: item
+Title: [LUCENE-6934] java.io.EOFException: read past EOF: MMapIndexInput [slice=_342.fdx]
+
+Current Element: item
+Title: [LUCENE-6914] DecimalDigitFilter skips characters in some cases (supplemental?)
+
+Current Element: item
+Title: [LUCENE-6808] Term(Ord)ValComparator.value return BytesRefs that are re-used internally
+
+Current Element: item
+Title: [LUCENE-6703] IllegalArgumentException in QueryParserBase.parse()
+
+Current Element: item
+Title: [LUCENE-6788] Mishandling of Integer.MIN_VALUE in FuzzySet leads to AssertionError
+
+Current Element: item
+Title: [LUCENE-6726] TestIndexWriterOnDiskFull.testAddDocumentOnDiskFull() failure
+
+Current Element: item
+Title: [LUCENE-6687] MLT term frequency calculation bug
+
+Current Element: item
+Title: [LUCENE-6667] Custom attributes get cleared by SynonymFilter
+
+Current Element: item
+Title: [LUCENE-6663] Null value dereference
+
+Current Element: item
+Title: [LUCENE-6689] Odd analysis problem with WDF, appears to be triggered by preceding analysis components
+
+Current Element: item
+Title: [LUCENE-6679] Filter's Weight.explain returns an explanation with isMatch==true even on documents that don't match
+
+Current Element: item
+Title: [LUCENE-6674] J9 assertion / crash in tests
+
+Current Element: item
+Title: [LUCENE-6656] StandardTokenizer.close() can leave the object in an uncloseable state
+
+Current Element: item
+Title: [LUCENE-6655] All analysis factory constructors fail if the passed in map is immutable
+
+Current Element: item
+Title: [LUCENE-7022] smokeTestRelease.py should confirm the git revision is "recognized"
+
+Current Element: item
+Title: [LUCENE-7021] buildAndPushRelease.py should ensure you have no unpushed git changes
+
+Current Element: item
+Title: [LUCENE-7023] Implementation-Version spans 2 lines in MANIFEST.MF in our JARs
+
+Current Element: item
+Title: [LUCENE-7017] TestGeoPointQuery failure
+
+Current Element: item
+Title: [LUCENE-7044] Range faceting fails on SortedNumericDocValuesField
+
+Current Element: item
+Title: [LUCENE-6994] GeoUtils Distance accuracy degrades with irregular rectangles
+
+Current Element: item
+Title: [LUCENE-6972] QueryBuilder should not differentiate single position and multiple positions queries when the analyzer produces synonyms.  
+
+Current Element: item
+Title: [LUCENE-5885] MergeScheduler should not implement Closeable
+
+Current Element: item
+Title: [LUCENE-5888] FSTOrdPostingsFormat doesnt support ord()
+
+Current Element: item
+Title: [LUCENE-5876] NPE in BoostQueryNodeBuilder.build
+
+Current Element: item
+Title: [LUCENE-5787] LuceneTestCase static leak checker interferes with Groovy unit tests
+
+Current Element: item
+Title: [LUCENE-5781] don't create unused states in LevenshteinAutomata
+
+Current Element: item
+Title: [LUCENE-5753] Domain lists for UAX_URL_EMAIL analyzer are incomplete - cannot recognize ".local" among others
+
+Current Element: item
+Title: [LUCENE-5732] Possible order violation in lucene library version 2.4.1
+
+Current Element: item
+Title: [LUCENE-5726] Make all resourceDescriptions of indexinputs consistent
+
+Current Element: item
+Title: [LUCENE-5742] size of frq record is very huge in the table
